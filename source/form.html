@@ -49,18 +49,17 @@
     </div>
   </header>
   <main class="page-contest">
-    <h1 class="visually-hidden">Страница формы для участия в конкурсе</h1>
 
     <section class="contest-intro">
       <div class="container">
-        <p class="slogan contest-intro__slogan">Конкурс на самое<br> безбашенное<br> путешествие с Пинк</p>
+        <h1 class="headline contest-intro__headline">Конкурс на самое<br> безбашенное<br> путешествие с Пинк</h1>
       </div>
     </section>
 
     <section class="contest">
       <div class="container">
         <h2 class="visually-hidden">Форма для заполнения</h2>
-        <p class="text contest__text">Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль
+        <p class="contest__text">Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль
           на вашу бонусную карту!</p>
 
         <form action="https://echo.htmlacademy.ru" class="contest__form" method="POST">
@@ -68,53 +67,53 @@
           <fieldset class="contest__client-data">
             <legend class="visually-hidden">Данные клиента</legend>
             <p class="text-filling contest__text-filling">
-              <label class="text text-filling__label" for="user-field-surname">Фамилия:</label>
-              <input class="input-filling text-filling__input" id="user-field-surname" type="text" name="surname"
+              <label class="label-text text-filling__label" for="user-field-surname">Фамилия:</label>
+              <input class="input-text text-filling__input" id="user-field-surname" type="text" name="surname"
                 placeholder="Укажите фамилию *" required>
             </p>
 
             <p class="text-filling contest__text-filling">
-              <label class="text text-filling__label" for="user-field-name">Имя:</label>
-              <input class="input-filling text-filling__input" id="user-field-name" type="text" name="name"
+              <label class="label-text text-filling__label" for="user-field-name">Имя:</label>
+              <input class="input-text text-filling__input" id="user-field-name" type="text" name="name"
                 placeholder="Введите ваше имя *" required>
             </p>
 
             <p class="text-filling contest__text-filling">
-              <label class="text text-filling__label" for="user-field-patronymic">Отчество:</label>
-              <input class="input-filling text-filling__input" id="user-field-patronymic" type="text" name="patronymic"
+              <label class="label-text text-filling__label" for="user-field-patronymic">Отчество:</label>
+              <input class="input-text text-filling__input" id="user-field-patronymic" type="text" name="patronymic"
                 placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
 
           <fieldset class="contest__achievements">
-            <legend class="text contest__achievements-title">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="title-legend contest__achievements-title">Ваши безбашенные достижения в путешествии</legend>
 
-            <label class="choice contest__checkbox">
+            <label class="choice choice--checkbox contest__checkbox">
               <input type="checkbox" name="achievement" value="shark" checked>
               <span>Сделал селфи с акулой</span>
             </label>
 
-            <label class="choice contest__checkbox">
+            <label class="choice choice--checkbox contest__checkbox">
               <input type="checkbox" name="achievement" value="burnt" checked>
               <span>Обгорел на пляже</span>
             </label>
 
-            <label class="choice contest__checkbox">
+            <label class="choice choice--checkbox contest__checkbox">
               <input type="checkbox" name="achievement" value="Chuck">
               <span>Видел Чака Норриса</span>
             </label>
 
-            <label class="choice contest__checkbox">
+            <label class="choice choice--checkbox contest__checkbox">
               <input type="checkbox" name="achievement" value="souvenirs">
               <span>Накупил сувениров</span>
             </label>
 
-            <label class="choice contest__checkbox">
+            <label class="choice choice--checkbox contest__checkbox">
               <input type="checkbox" name="achievement" value="tower" checked>
               <span>Удержал башню</span>
             </label>
 
-            <label class="choice contest__checkbox">
+            <label class="choice choice--checkbox contest__checkbox">
               <input type="checkbox" name="achievement" value="hotel">
               <span>Разгромил отель</span>
             </label>
@@ -124,40 +123,40 @@
             <legend class="visually-hidden">Контактная информация</legend>
 
             <p class="text-filling contest__text-filling">
-              <label class="text text-filling__label" for="user-field-phone">Номер телефона</label>
-              <input class="input-filling text-filling__input" id="user-field-phone" type="text" name="phone"
+              <label class="label-text text-filling__label" for="user-field-phone">Номер телефона</label>
+              <input class="input-text text-filling__input" id="user-field-phone" type="text" name="phone"
                 placeholder="Номер, пожалуйста">
             </p>
 
             <p class="text-filling contest__text-filling">
-              <label class="text text-filling__label" for="user-field-email">Адрес почты</label>
-              <input class="input-filling text-filling__input" id="user-field-email" type="text" name="email"
+              <label class="label-text text-filling__label" for="user-field-email">Адрес почты</label>
+              <input class="input-text text-filling__input" id="user-field-email" type="text" name="email"
                 placeholder="Введите почту *" required>
             </p>
           </fieldset>
 
           <fieldset class="contest__application">
-            <legend class="text contest__application-title">С каким приложением путешествовали?</legend>
-            <label class="choice contest__radio">
+            <legend class="title-legend contest__application-title">С каким приложением путешествовали?</legend>
+            <label class="choice choice--radio contest__radio">
               <input type="radio" name="application" value="iOS" checked>
               <span>Pink для iOS</span>
             </label>
 
-            <label class="choice contest__radio">
+            <label class="choice choice--radio contest__radio">
               <input type="radio" name="application" value="Android">
               <span>Pink на Android</span>
             </label>
 
-            <label class="choice contest__radio">
+            <label class="choice choice--radio contest__radio">
               <input type="radio" name="application" value="Windows">
               <span>Windows Phone</span>
             </label>
           </fieldset>
 
           <fieldset class="contest__emotion">
-            <legend class="text contest__emotion-title">Опишите свои эмоции</legend>
+            <legend class="title-legend contest__emotion-title">Опишите свои эмоции</legend>
             <label class="description-field contest__description-field">
-              <textarea class="input-filling description-field__textarea" class="" name="description" cols="30" rows="4"
+              <textarea class="input-text description-field__textarea" name="description" cols="30" rows="4"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </label>
           </fieldset>
