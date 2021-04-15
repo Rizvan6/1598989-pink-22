@@ -1,0 +1,30 @@
+.tarif {
+  background-color: $background-lightgrey;
+  padding: 83px 0 49px 0;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.tarif__row-main {
+  background-color: $basic-darkblue;
+}
+
+.tarif__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
+.tarif__price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.tarif__type {
+  line-height: 30px;
+  color: $basic-darkblue;
+  text-transform: uppercase;
+}

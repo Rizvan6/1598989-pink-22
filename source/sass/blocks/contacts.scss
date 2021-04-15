@@ -1,0 +1,34 @@
+.contacts {
+  background-color: $basic-white;
+  outline: 5px solid rgba(200, 50, 145, 0.7);
+  outline-offset: -5px;
+  padding-top: 50px;
+}
+
+.contacts__list {
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+.contacts__item {
+  margin-bottom: 31px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contacts__link {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: $basic-pink;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 13px;
+}
