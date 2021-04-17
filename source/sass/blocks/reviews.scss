@@ -1,6 +1,6 @@
 .reviews {
   padding: 50px 0 60px 0;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  clip-path: $clip-path-polygon;
   background-color: $basic-white;
   outline: 5px solid rgba(100, 50, 145, 0.7);
   outline-offset: -5px;
