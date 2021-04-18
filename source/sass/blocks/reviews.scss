@@ -1,0 +1,35 @@
+.reviews {
+  padding: 50px 0 60px 0;
+  clip-path: $clip-path-polygon;
+  background-color: $basic-white;
+  outline: 5px solid rgba(100, 50, 145, 0.7);
+  outline-offset: -5px;
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 30px;
+  color: $basic-black;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-info {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $basic-darkblue;
+}
+
+.reviews__description {
+  margin: 31px 0;
+}
+
+.reviews__toogles {
+  margin: 0;
+}
