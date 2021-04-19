@@ -1,0 +1,61 @@
+.contest {
+  padding: 54px 0 26px 0;
+}
+
+.contest__text {
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.contest__client-data {
+  @include fieldset-reset;
+  padding-bottom: 42px;
+}
+
+.contest__achievements {
+  @include fieldset-reset;
+  @include fieldset-padding;
+  background-color: $basic-lightgrey;
+}
+
+.contest__achievements-title {
+  margin-bottom: 42px;
+}
+
+.contest__contacts {
+  @include fieldset-reset;
+  @include fieldset-padding;
+}
+
+.contest__application {
+  @include fieldset-reset;
+  @include fieldset-padding;
+  background-color: $basic-lightgrey;
+}
+
+.contest__application-title {
+  margin-bottom: 42px;
+}
+
+.contest__emotion {
+  @include fieldset-reset;
+  padding-top: 42px;
+  padding-bottom: 48px;
+}
+
+.contest__emotion-title {
+  margin-bottom: 20px;
+}
+
+.contest__text-required {
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-top: 34px;
+
+  .contest__star {
+    color: $basic-pink;
+  }
+}

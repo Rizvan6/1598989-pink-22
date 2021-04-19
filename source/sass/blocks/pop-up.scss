@@ -1,0 +1,38 @@
+.pop-up {
+  width: 320px;
+  position: fixed;
+  top: 120px;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  background-color: $basic-white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  text-align: center;
+}
+
+.pop-up--failure {
+  padding: 40px 0 50px 0;
+  display: none;
+}
+
+.pop-up--success {
+  padding-top: 40px;
+  display: none;
+}
+
+.pop-up__title {
+  font-weight: 700;
+  font-size: 18px;
+  color: $basic-black;
+  margin: 0;
+}
+
+.pop-up__text {
+  margin: 30px 0 34px 0;
+}
+
+.pop-up__block-button {
+  background-color: $basic-lightgrey;
+  padding: 50px 0;
+}

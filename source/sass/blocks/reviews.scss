@@ -1,7 +1,7 @@
 .reviews {
-  padding: 50px 0 60px 0;
-  clip-path: $clip-path-polygon;
+  @include background-transition;
   background-color: $basic-white;
+  padding: 50px 0 60px 0;
   outline: 5px solid rgba(100, 50, 145, 0.7);
   outline-offset: -5px;
 }
@@ -9,8 +9,8 @@
 .reviews__author-name {
   font-weight: 700;
   font-size: 18px;
-  font-style: normal;
   line-height: 30px;
+  font-style: normal;
   color: $basic-black;
 }
 
@@ -20,9 +20,9 @@
 
 .reviews__author-info {
   font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 30px;
+  font-style: normal;
   color: $basic-darkblue;
 }
 

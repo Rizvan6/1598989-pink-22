@@ -5,11 +5,11 @@
 @import "global/variables.scss";
 @import "global/container.scss";
 @import "global/visually-hidden.scss";
+@import "global/mixins.scss";
 
 // Blocks
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
-@import "blocks/page-main.scss";
 @import "blocks/application.scss";
 @import "blocks/headline.scss";
 @import "blocks/download.scss";
@@ -21,3 +21,9 @@
 @import "blocks/tarif.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/intro.scss";
+@import "blocks/contest.scss";
+@import "blocks/text-filling.scss";
+@import "blocks/title-legend.scss";
+@import "blocks/choice.scss";
+@import "blocks/pop-up.scss";

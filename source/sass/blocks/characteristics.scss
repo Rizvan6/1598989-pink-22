@@ -1,7 +1,7 @@
 .characteristics__intro {
-  background-color: $basic-white;
+  @include background-transition;
   padding: 46px 0 70px 0;
-  clip-path: $clip-path-polygon;
+  background-color: $basic-white;
   outline: 5px solid rgba(100, 250, 145, 0.7);
   outline-offset: -5px;
 }
@@ -11,8 +11,9 @@
 }
 
 .characteristics__advantages {
-  padding-top: 53px;
+  padding-top: 129px;
   padding-bottom: 43px;
+  background-color: $basic-lightgrey;
   outline: 5px solid rgba(50, 50, 145, 0.7);
   outline-offset: -5px;
 }
