@@ -5,17 +5,18 @@ $basic-black: #000000;
 $basic-darkblue: #283645;
 $basic-pink: #d22856;
 $basic-grey: #e5e5e5;
+$basic-lightgrey: #f2f2f2;
 
 $background-download-list: #1d2631;
-$background-lightgrey: #f2f2f2;
 
 $button-basic: #2aab6d;
 $hover-button-basic: #1c9b5e;
 
+//box-shadow
+
+$box-shadow-light: rgba(255, 255, 255, 0.15);
+$box-shadow-dark: rgba(0, 0, 0, 0.15);
+
 // Fonts
 
 $font-main: "Open Sans", "Arial", sans-serif;
-
-// Clip-path
-
-$clip-path-polygon: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);

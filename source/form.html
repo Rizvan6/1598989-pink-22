@@ -37,9 +37,10 @@
   </header>
 
   <main class="page-contest">
-    <section class="contest-intro">
+
+    <section class="intro page-contest__intro">
       <div class="container">
-        <h1 class="headline contest-intro__headline">Конкурс на самое<br> безбашенное<br> путешествие с Пинк</h1>
+        <h1 class="headline intro__headline">Конкурс на самое<br> безбашенное<br> путешествие с Пинк</h1>
       </div>
     </section>
 
@@ -48,112 +49,119 @@
         <h2 class="visually-hidden">Форма для заполнения</h2>
         <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
           бонусную карту!</p>
+      </div>
 
-        <form action="https://echo.htmlacademy.ru" class="contest__form" method="POST">
+      <form action="https://echo.htmlacademy.ru" class="contest__form" method="POST">
 
-          <fieldset class="contest__client-data">
+        <fieldset class="contest__client-data">
+          <div class="container">
             <legend class="visually-hidden">Данные клиента</legend>
 
-            <p class="text-filling contest__text-filling">
-              <label class="label-text text-filling__label" for="user-field-surname">Фамилия:</label>
-              <input class="input-text text-filling__input" id="user-field-surname" type="text" name="surname"
-                placeholder="Укажите фамилию *" required>
-            </p>
+            <label class="text-filling contest__text-filling">
+              <span class="text-filling__text">Фамилия:</span>
+              <input class="text-filling__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+            </label>
 
-            <p class="text-filling contest__text-filling">
-              <label class="label-text text-filling__label" for="user-field-name">Имя:</label>
-              <input class="input-text text-filling__input" id="user-field-name" type="text" name="name"
-                placeholder="Введите ваше имя *" required>
-            </p>
+            <label class="text-filling contest__text-filling">
+              <span class="text-filling__text">Имя:</span>
+              <input class="text-filling__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+            </label>
 
-            <p class="text-filling contest__text-filling">
-              <label class="label-text text-filling__label" for="user-field-patronymic">Отчество:</label>
-              <input class="input-text text-filling__input" id="user-field-patronymic" type="text" name="patronymic"
-                placeholder="Ну и отчество тоже">
-            </p>
-          </fieldset>
+            <label class="text-filling contest__text-filling">
+              <span class="text-filling__text">Отчество:</span>
+              <input class="text-filling__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            </label>
+        </fieldset>
+        </div>
 
-          <fieldset class="contest__achievements">
+        <fieldset class="contest__achievements">
+          <div class="container">
             <legend class="title-legend contest__achievements-title">Ваши безбашенные достижения в путешествии</legend>
 
             <label class="choice choice--checkbox contest__checkbox">
-              <input type="checkbox" name="achievement" value="shark" checked>
-              <span>Сделал селфи с акулой</span>
+              <input class="choice__input" type="checkbox" name="achievement" value="shark" checked>
+              <span class="choice__text">Сделал селфи с акулой</span>
             </label>
 
             <label class="choice choice--checkbox contest__checkbox">
-              <input type="checkbox" name="achievement" value="burnt" checked>
-              <span>Обгорел на пляже</span>
+              <input class="choice__input" type="checkbox" name="achievement" value="burnt" checked>
+              <span class="choice__text">Обгорел на пляже</span>
             </label>
 
             <label class="choice choice--checkbox contest__checkbox">
-              <input type="checkbox" name="achievement" value="Chuck">
-              <span>Видел Чака Норриса</span>
+              <input class="choice__input" type="checkbox" name="achievement" value="Chuck">
+              <span class="choice__text">Видел Чака Норриса</span>
             </label>
 
             <label class="choice choice--checkbox contest__checkbox">
-              <input type="checkbox" name="achievement" value="souvenirs">
-              <span>Накупил сувениров</span>
+              <input class="choice__input" type="checkbox" name="achievement" value="souvenirs">
+              <span class="choice__text">Накупил сувениров</span>
             </label>
 
             <label class="choice choice--checkbox contest__checkbox">
-              <input type="checkbox" name="achievement" value="tower" checked>
-              <span>Удержал башню</span>
+              <input class="choice__input" type="checkbox" name="achievement" value="tower" checked>
+              <span class="choice__text">Удержал башню</span>
             </label>
 
             <label class="choice choice--checkbox contest__checkbox">
-              <input type="checkbox" name="achievement" value="hotel">
-              <span>Разгромил отель</span>
+              <input class="choice__input" type="checkbox" name="achievement" value="hotel">
+              <span class="choice__text">Разгромил отель</span>
             </label>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="contest__contacts">
+        <fieldset class="contest__contacts">
+          <div class="container">
             <legend class="visually-hidden">Контактная информация</legend>
 
-            <p class="text-filling contest__text-filling">
-              <label class="label-text text-filling__label" for="user-field-phone">Номер телефона</label>
-              <input class="input-text text-filling__input" id="user-field-phone" type="text" name="phone"
-                placeholder="Номер, пожалуйста">
-            </p>
+            <label class="text-filling contest__text-filling">
+              <span class="text-filling__text">Номер телефона</span>
+              <input class="text-filling__input" type="text" name="phone" placeholder="Номер, пожалуйста">
+            </label>
 
-            <p class="text-filling contest__text-filling">
-              <label class="label-text text-filling__label" for="user-field-email">Адрес почты</label>
-              <input class="input-text text-filling__input" id="user-field-email" type="text" name="email"
-                placeholder="Введите почту *" required>
-            </p>
-          </fieldset>
+            <label class="text-filling contest__text-filling">
+              <span class="text-filling__text">Адрес почты</span>
+              <input class="text-filling__input" type="text" name="email" placeholder="Введите почту *" required>
+            </label>
+        </fieldset>
 
-          <fieldset class="contest__application">
+        <fieldset class="contest__application">
+          <div class="container">
             <legend class="title-legend contest__application-title">С каким приложением путешествовали?</legend>
 
             <label class="choice choice--radio contest__radio">
-              <input type="radio" name="application" value="iOS" checked>
-              <span>Pink для iOS</span>
+              <input class="choice__input" type="radio" name="application" value="iOS" checked>
+              <span class="choice__text">Pink для iOS</span>
             </label>
 
             <label class="choice choice--radio contest__radio">
-              <input type="radio" name="application" value="Android">
-              <span>Pink на Android</span>
+              <input class="choice__input" type="radio" name="application" value="Android">
+              <span class="choice__text">Pink на Android</span>
             </label>
 
             <label class="choice choice--radio contest__radio">
-              <input type="radio" name="application" value="Windows">
-              <span>Windows Phone</span>
+              <input class="choice__input" type="radio" name="application" value="Windows">
+              <span class="choice__text">Windows Phone</span>
             </label>
-          </fieldset>
+        </fieldset>
+        </div>
 
-          <fieldset class="contest__emotion">
+        <fieldset class="contest__emotion">
+          <div class="container">
             <legend class="title-legend contest__emotion-title">Опишите свои эмоции</legend>
-            <label class="description-field contest__description-field">
-              <textarea class="input-text description-field__textarea" name="description" cols="30" rows="4"
+            <label class="text-filling contest__text-filling">
+              <span class="visually-hidden">Форма для эмоций</span>
+              <textarea class="text-filling__input" name="description" cols="30" rows="4"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </label>
-          </fieldset>
-
+          </div>
+        </fieldset>
+        <div class="container contest__send-form">
           <button class="button contest__button" typy="submit">Отправить форму</button>
-          <p class="contest__required">* – Обязательные поля</p>
-        </form>
-      </div>
+          <p class="contest__text-required"><span class="contest__star">*</span> – Обязательные поля</p>
+        </div>
+      </form>
+
     </section>
   </main>
 
@@ -191,19 +199,26 @@
     </div>
   </footer>
 
-  <section class="pop-up pop-up--success">
-    <h2 class="pop-up__title">Что-то пошло не так!</h2>
-    <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="button button__pop-up" type="button">Ок</button>
+  <section class="pop-up pop-up--failure">
+    <div class="container">
+      <h2 class="pop-up__title">Что-то пошло не так!</h2>
+      <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button" type="button">Ок</button>
+    </div>
   </section>
 
-  <section class="pop-up pop-up--failure">
-    <h2 class="pop-up__title">Ваша заявка отправлена</h2>
-    <p class="pop-up__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее
-      и оповестим вас.</p>
-    <div class="pop-up__block-button">
-      <button class="button button__pop-up" type="button">Закрыть окно</button>
+  <section class="pop-up pop-up--success">
+    <div class="container">
+      <h2 class="pop-up__title">Ваша заявка отправлена</h2>
+      <p class="pop-up__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим
+        ее и оповестим вас.</p>
     </div>
+    <div class="pop-up__block-button">
+      <div class="container">
+        <button class="button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+
   </section>
 </body>
 
