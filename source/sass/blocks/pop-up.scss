@@ -6,19 +6,18 @@
   bottom: auto;
   left: 0;
   background-color: $basic-white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px $box-shadow-dark;
   margin: auto;
   text-align: center;
-}
-
-.pop-up--failure {
-  padding: 40px 0 50px 0;
   display: none;
-}
 
-.pop-up--success {
-  padding-top: 40px;
-  display: none;
+  &--failure {
+    padding: 40px 0 50px 0;
+  }
+
+  &--success {
+    padding-top: 40px;
+  }
 }
 
 .pop-up__title {
