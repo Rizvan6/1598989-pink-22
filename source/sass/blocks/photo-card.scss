@@ -1,0 +1,45 @@
+.photo-card__link {
+  background-color: $basic-darkblue;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.photo-card__image {
+  display: block;
+}
+
+.photo-card__post {
+  background-color: $basic-lightgrey;
+  margin: 0;
+  padding: 20px 17px;
+}
+
+.photo-card__name {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.photo-card__time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.photo-card__text {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.photo-card__button {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  font-style: normal;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  color: $basic-pink;
+  padding: 0;
+  margin-left: 30px;
+}

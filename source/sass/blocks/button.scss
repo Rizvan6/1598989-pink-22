@@ -2,24 +2,38 @@
   font-family: $font-main;
   font-weight: 700;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   font-style: normal;
-  text-transform: uppercase;
   text-align: center;
-  border-radius: 1px;
-  border: 2px solid $button-basic;
-  color: $basic-white;
-  background-color: $button-basic;
+  border-radius: 30px;
+  background-color: transparent;
   padding: 16px 0;
   width: 280px;
 
-  &--application {
-    line-height: 18px;
-    text-transform: none;
+  &--green {
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    border: 2px solid $button-form;
+    color: $basic-white;
+    background-color: $button-form;
+  }
+
+  &--border-white {
     border: 3px solid $basic-white;
-    border-radius: 29px;
-    background-color: transparent;
+    color: $basic-white;
     display: inline-block;
     vertical-align: top;
+  }
+
+  &--border-pink {
+    border: 3px solid $basic-pink;
+    color: $basic-pink;
+  }
+
+  &--border-grey {
+    border: 3px solid $basic-darkblue;
+    color: $basic-darkblue;
+    opacity: 0.1;
   }
 }
