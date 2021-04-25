@@ -3,18 +3,59 @@
   outline: 5px solid rgba(200, 50, 145, 0.7);
   outline-offset: -5px;
   padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .contacts__list {
-  margin-top: 45px;
+  margin-top: 44px;
   margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+  }
 }
 
 .contacts__item {
   margin-bottom: 31px;
+  width: 280px;
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--telephone {
+      order: 1;
+    }
+
+    &--email {
+      order: 3;
+    }
+
+    &--address {
+      order: 2;
+    }
   }
 }
 

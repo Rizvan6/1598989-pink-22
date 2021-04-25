@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
@@ -10,80 +10,80 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
+    <div class="page-header__menu-wrapper">
+      <div class="container">
+        <a class="page-header__logo">
+          <img src="img/pink-header-mobile.svg" alt="Лого Пинк">
+        </a>
+        <nav class="main-nav page-header__nav">
+          <button class="main-nav__toogle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list list-unstyled">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html" class="main-nav__link">Фотография</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-      <a class="page-header__logo">
-        <img src="img/pink-header-mobile.svg" alt="Лого Пинк">
-      </a>
+    <h1 class="visually-hidden">Фотоприложение Пинк</h1>
 
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list list-unstyled">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link">Фотография</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="page-header__application-wrapper">
+      <div class="page-header__content">
+
+        <p class="headline headline--app page-header__headline">Взгляните на жизнь иначе!</p>
+
+        <div class="download page-header__download">
+          <div class="download__wrapper">
+            <a href="https://www.apple.com/app-store/" class="button button--border-white download__button"
+              target="_blank">Скачать приложение</a>
+            <ul class="download__list list-unstyled">
+              <li class="download__item">
+                <a href="https://www.apple.com/app-store/" target="_blank">
+                  <span class="visually-hidden">App Store</span>
+                  <img src="img/icon-apple.svg" alt="лого apple" width="47" height="56">
+                </a>
+              </li>
+              <li class="download__item">
+                <a href="https://play.google.com/store" target="_blank">
+                  <span class="visually-hidden">Google Play</span>
+                  <img src="img/icon-android.svg" alt="лого android" width="43" height="47">
+                </a>
+              </li>
+              <li class="download__item">
+                <a href="https://www.microsoft.com/en-us/store/apps/windows" target="_blank">
+                  <span class="visually-hidden">Windows Store</span>
+                  <img src="img/icon-microsoft.svg" alt="лого windows" width="44" height="41">
+                </a>
+              </li>
+            </ul>
+            <p class="download__description">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
+
   <main class="page-main">
-    <h1 class="visually-hidden">Фотоприложение Пинк</h1>
-
-    <section class="application">
-      <div class="container">
-        <h2 class="visually-hidden">Загрузка приложения</h2>
-        <p class="headline headline--app application__headline">Взгляните на жизнь<br> иначе!</p>
-      </div>
-
-      <div class="download application__download">
-        <div class="container">
-          <a href="https://www.apple.com/app-store/" class="button button--border-white download__button"
-            target="_blank">Скачать приложение</a>
-          <ul class="download__list list-unstyled">
-            <li class="download__item">
-              <a href="https://www.apple.com/app-store/" target="_blank">
-                <span class="visually-hidden">App Store</span>
-                <img src="img/icon-apple.svg" alt="лого apple" width="47" height="56">
-              </a>
-            </li>
-            <li class="download__item">
-              <a href="https://play.google.com/store" target="_blank">
-                <span class="visually-hidden">Google Play</span>
-                <img src="img/icon-android.svg" alt="лого android" width="43" height="47">
-              </a>
-            </li>
-            <li class="download__item">
-              <a href="https://www.microsoft.com/en-us/store/apps/windows" target="_blank">
-                <span class="visually-hidden">Windows Store</span>
-                <img src="img/icon-microsoft.svg" alt="лого windows" width="44" height="41">
-              </a>
-            </li>
-          </ul>
-          <p class="download__description">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
-        </div>
-
-      </div>
-    </section>
-
     <section class="characteristics">
       <h2 class="visually-hidden">Информация о приложении</h2>
 
       <div class="characteristics__intro">
         <div class="container">
           <p class="slogan characteristics__slogan">Устали от серости мегаполиса?</p>
-          <p class="slogan characteristics__slogan">Нам есть, что вам предложить!</p>
+          <p class="slogan characteristics__slogan">Нам есть, что вам<br> предложить!</p>
         </div>
       </div>
 
@@ -112,9 +112,8 @@
 
     <section class="research">
       <div class="container">
-        <h2 class="visually-hidden">Исследование нашего приложения</h2>
         <div class="research__block">
-          <p class="research__subtitle">Эффект<br> на 24 часа!</p>
+          <h2 class="research__subtitle">Эффект на 24 часа!</h2>
           <p class="research__description">Британские ученые провели исследования и доказали, что положительный
             эффект от использования приложения длится целые сутки!</p>
           <a class="research__link" href="#">Узнать больше об исследовании</a>
@@ -150,9 +149,9 @@
           <button class="reviews__next" type="button" aria-label="Следующий отзыв"></button>
         </div>
         <p class="reviews__toogles slider__toogles">
-          <button type="button" class="slider__toogle slider__toogle--current">1</button>
-          <button type="button" class="slider__toogle">2</button>
-          <button type="button" class="slider__toogle">3</button>
+          <button type="button" class="slider__toogle slider__toogle--current" aria-label="1"></button>
+          <button type="button" class="slider__toogle" aria-label="2"></button>
+          <button type="button" class="slider__toogle" aria-label="3"></button>
         </p>
       </div>
     </section>
@@ -161,53 +160,69 @@
       <div class="container slider">
         <h2 class="visually-hidden">Наши тарифы</h2>
         <table class="tarif__table slider__list">
-          <div class="tarif__item slider__item">
-            <tr class="tarif__row-main">
-              <th class="tarif__name">База<br> <span class="tarif__price">1,99 Usd</span></th>
+          <thead class="tarif__thead">
+            <tr>
+              <th></th>
+              <th class="tarif__table-header">База<br> <span class="tarif__price">1,99 Usd</span></th>
+              <th class="tarif__table-header tarif__table-header--hit">Стандарт<br> <span class="tarif__price">3,99
+                  Usd</span></th>
+              <th class="tarif__table-header">Анлим<br> <span class="tarif__price">9,99 Usd</span></th>
             </tr>
-            <tr class="tarif__row">
-              <td class="tarif__type tarif__type--yes">Розовый фильтр</td>
+          </thead>
+          <tbody class="tarif__tbody">
+            <tr>
+              <td class="tarif__table-data">Розовый фильтр</td>
+              <td class="tarif__table-data">
+                <span class="tarif__text-mobile">Розовый фильтр</span>
+                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+              </td>
+              <td class="tarif__table-data">
+                <span class="tarif__text-mobile">Розовый фильтр</span>
+                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+              </td>
+              <td class="tarif__table-data">
+                <span class="tarif__text-mobile">Розовый фильтр</span>
+                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+              </td>
             </tr>
-            <tr class="tarif__row">
-              <td class="tarif__type tarif__type--no">Смайлики</td>
+
+            <tr>
+              <td class="tarif__table-data">Смайлики</td>
+              <td class="tarif__table-data">
+                <span class="tarif__text-mobile">Смайлики</span>
+                <span class="tarif__value tarif__value--no" aria-label="Нет"></span>
+              </td>
+              <td class="tarif__table-data">
+                <span class="tarif__text-mobile">Смайлики</span>
+                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+              </td>
+              <td class="tarif__table-data">
+                <span class="tarif__text-mobile">Смайлики</span>
+                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+              </td>
             </tr>
-            <tr class="tarif__row">
-              <td class="tarif__type tarif__type--no">Комментарии</td>
+
+            <tr>
+              <td class="tarif__table-data">Комментарии</td>
+              <td class="tarif__table-data">
+                <span class="tarif__text-mobile">Комментарии</span>
+                <span class="tarif__value tarif__value--no" aria-label="Нет"></span>
+              </td>
+              <td class="tarif__table-data">
+                <span class="tarif__text-mobile">Комментарии</span>
+                <span class="tarif__value tarif__value--no" aria-label="Нет"></span>
+              </td>
+              <td class="tarif__table-data">
+                <span class="tarif__text-mobile">Комментарии</span>
+                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+              </td>
             </tr>
-          </div>
-          <div class="tarif__item slider__item">
-            <tr class="tarif__row-main">
-              <th class="tarif__name">Стандарт<br> <span class="tarif__price">3,99 Usd</span></th>
-            </tr>
-            <tr class="tarif__row">
-              <td class="tarif__type tarif__type--yes">Розовый фильтр</td>
-            </tr>
-            <tr class="tarif__row">
-              <td class="tarif__type tarif__type--yes">Смайлики</td>
-            </tr>
-            <tr class="tarif__row">
-              <td class="tarif__type tarif__type--no">Комментарии</td>
-            </tr>
-          </div>
-          <div class="tarif__item slider__item">
-            <tr class="tarif__row-main">
-              <th class="tarif__name">Анлим<br> <span class="tarif__price">9,99 Usd</span></th>
-            </tr>
-            <tr class="tarif__row">
-              <td class="tarif__type tarif__type--yes">Розовый фильтр</td>
-            </tr>
-            <tr class="tarif__row">
-              <td class="tarif__type tarif__type--yes">Смайлики</td>
-            </tr>
-            <tr class="tarif__row">
-              <td class="tarif__type tarif__type--yes">Комментарии</td>
-            </tr>
-          </div>
+          </tbody>
         </table>
         <p class="tarif__toogles slider__toogles">
-          <button type="button" class="slider__toogle">1</button>
-          <button type="button" class="slider__toogle slider__toogle--current">2</button>
-          <button type="button" class="slider__toogle">3</button>
+          <button type="button" class="slider__toogle" aria-label="1"></button>
+          <button type="button" class="slider__toogle slider__toogle--current" aria-label="2"></button>
+          <button type="button" class="slider__toogle" aria-label="3"></button>
         </p>
       </div>
     </section>
@@ -217,27 +232,31 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="slogan contacts__slogan">Остались вопросы?<br>Свяжитесь с нами!</p>
         <ul class="contacts__list list-unstyled">
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--telephone">
             <span class="contacts__text">Звоните:</span><br>
             <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--email">
             <span class="contacts__text">Пишите:</span><br>
             <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--address">
             <span class="contacts__text">Приезжайте в гости:</span><br>
             <a class="contacts__link" href="#">ул. Большая<br> Конюшенная, 19/8</a>
           </li>
         </ul>
+      </div>
+
+      <div class="map">
+
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="container">
-      <a href="#" class="page-footer__logo">
-        <img src="img/pink-footer-mobile.svg" alt="Лого Пинк">
+      <a href="#" class="page-footer__logo-link">
+        <img class="page-footer__logo" src="img/pink-footer-mobile.svg" alt="Лого Пинк">
       </a>
       <ul class="page-footer__social-list list-unstyled">
         <li class="page-footer__social-item">
@@ -261,8 +280,8 @@
       </ul>
       <p class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
-        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <img src="img/icon-html-academy.svg" alt="Лого htmlacademy">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img class="page-footer__htmlacademy-logo" src="img/icon-html-academy.svg" alt="Лого htmlacademy">
         </a>
       </p>
     </div>

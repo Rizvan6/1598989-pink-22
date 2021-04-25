@@ -2,7 +2,7 @@
 
 @mixin background-transition {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
-  margin-bottom: -10vh;
+  margin-bottom: -20vh;
 }
 
 /// Contest
@@ -16,4 +16,19 @@
 @mixin fieldset-padding {
   padding-top: 42px;
   padding-bottom: 42px;
+}
+
+/// Visually-hidden
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
