@@ -1,9 +1,11 @@
-@media (min-width: $desktop-width) {
-  .main-nav__toogle {
+.main-nav__toogle {
+  @media (min-width: $desktop-width) {
     display: none;
   }
+}
 
-  .main-nav__list {
+.main-nav__list {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
