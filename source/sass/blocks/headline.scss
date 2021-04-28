@@ -7,5 +7,15 @@
 
   &--app {
     line-height: 28px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+      line-height: 68px;
+    }
   }
 }

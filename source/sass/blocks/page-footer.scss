@@ -1,11 +1,57 @@
 .page-footer {
   padding: 40px 0;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0;
+  }
+}
+
+.page-footer__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo-link,
+.page-footer__copyright-link,
+.page-footer__social-link {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.page-footer__logo,
+.page-footer__htmlacademy-logo {
+  display: block;
 }
 
 .page-footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 41px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__copyright {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-footer__copyright-text {
   line-height: 18px;
+  margin-right: 15px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
