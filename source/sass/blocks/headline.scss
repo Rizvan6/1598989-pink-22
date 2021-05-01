@@ -5,6 +5,11 @@
   color: $basic-white;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
   &--app {
     line-height: 28px;
 

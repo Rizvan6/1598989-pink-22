@@ -1,13 +1,4 @@
-.text-filling__text {
-  line-height: 30px;
-  color: $basic-pink;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-left: 23px;
-  margin-bottom: 8px;
-}
-
-.text-filling__input {
+.filling-input {
   font-family: $font-main;
   font-weight: 400;
   font-size: 18px;
@@ -17,10 +8,13 @@
   border: 2px solid $basic-grey;
   border-radius: 1px;
   padding: 14px 18px;
-  width: 280px;
   resize: none;
 
   &::placeholder {
     color: $basic-darkblue;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
   }
 }

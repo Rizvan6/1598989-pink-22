@@ -60,12 +60,26 @@
 .page-header__headline {
   width: 280px;
   margin: 0 auto;
-  margin-top: 0;
   margin-bottom: 320px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.page-header__headline-form {
+  margin: 0;
+  padding-top: 36px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 74px;
   }
 }
 
