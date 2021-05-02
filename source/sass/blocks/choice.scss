@@ -1,4 +1,73 @@
-.choice__text {
+.choice {
+  position: relative;
+
+  &--checkbox {
+    padding-left: 60px;
+  }
+
+  &--radio {
+    padding-left: 70px;
+  }
+}
+
+.choice__label {
   font-size: 18px;
   line-height: 30px;
+  cursor: pointer;
+  user-select: none;
+
+  &--checkbox::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: $basic-white;
+    border: 2px solid $basic-grey;
+    border-radius: 1px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+
+  &--radio::before {
+    content: "";
+    width: 37px;
+    height: 37px;
+    background-color: $basic-white;
+    border: 2px solid $basic-grey;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -3px;
+  }
+
+  &:hover::before {
+    border-color: $basic-darkblue;
+  }
+
+  &:active::before {
+    border-color: $basic-pink;
+  }
+}
+
+.choice__input {
+  &:checked + .choice__label--checkbox::after {
+    content: "";
+    width: 22px;
+    height: 16px;
+    background: url("../img/tick.svg") no-repeat 0 0;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+  }
+
+  &:checked + .choice__label--radio::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $basic-pink;
+    position: absolute;
+    left: 11px;
+    top: 8px;
+  }
 }
