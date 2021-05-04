@@ -1,6 +1,4 @@
 .photo-card {
-  width: 280px;
-
   @media (min-width: $tablet-width) {
     width: 300px;
     min-height: 455px;
@@ -15,27 +13,37 @@
   background-color: $basic-darkblue;
   display: inline-block;
   vertical-align: top;
-}
-
-.photo-card__image {
-  display: block;
-  object-fit: contain;
+  width: 280px;
+  height: 180px;
 
   @media (min-width: $tablet-width) {
-    height: 300px;
     width: 300px;
-
-    &--panorama {
-      width: 620px;
-      height: 509px;
-    }
+    height: 300px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 300px;
     height: 400px;
+  }
 
-    &--panorama {
-      width: 940px;
+  &--panorama {
+    width: 100vw;
+    min-width: 320px;
+    height: 137px;
+    position: relative;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      min-width: 660px;
+      height: 509px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 1200px;
       height: 506px;
     }
   }
@@ -85,6 +93,7 @@
 
     &--panorama {
       order: 2;
+      height: auto;
     }
   }
 }
