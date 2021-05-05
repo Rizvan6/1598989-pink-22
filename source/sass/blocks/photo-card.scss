@@ -1,20 +1,77 @@
+.photo-card {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    min-height: 455px;
+
+    &--panorama {
+      width: 100%;
+    }
+  }
+}
+
 .photo-card__link {
   background-color: $basic-darkblue;
   display: inline-block;
   vertical-align: top;
-}
+  width: 280px;
+  height: 180px;
 
-.photo-card__image {
-  display: block;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
+
+  &--panorama {
+    width: 100vw;
+    min-width: 320px;
+    height: 137px;
+    position: relative;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      min-width: 660px;
+      height: 509px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 1200px;
+      height: 506px;
+    }
+  }
 }
 
 .photo-card__post {
   background-color: $basic-lightgrey;
-  margin: 0;
-  padding: 20px 17px;
+  padding: 20px 13px 20px 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 30px 24px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 155px;
+
+    &--panorama {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      height: auto;
+    }
+  }
 }
 
 .photo-card__name {
+  margin: 0;
   font-weight: 700;
   font-style: normal;
 }
@@ -28,6 +85,17 @@
 .photo-card__text {
   margin-top: 0;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    height: 50px;
+    overflow: scroll;
+
+    &--panorama {
+      order: 2;
+      height: auto;
+    }
+  }
 }
 
 .photo-card__button {
@@ -41,5 +109,8 @@
   border: none;
   color: $basic-pink;
   padding: 0;
-  margin-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }

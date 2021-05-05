@@ -1,22 +1,127 @@
 .edit {
   background-color: $basic-lightgrey;
   padding: 20px 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+    padding: 0;
+  }
+}
+
+.edit__form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows:
+      1fr
+      1fr;
+    column-gap: 20px;
+
+    grid-template-areas:
+      "picture edit"
+      "picture buttons";
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 56px 60px 56px 80px;
+    background-color: $basic-lightgrey;
+    grid-template-columns: 300px 410px;
+    grid-template-rows:
+      1fr
+      1fr;
+    column-gap: 90px;
+  }
 }
 
 .edit__link {
   background-color: $basic-darkblue;
   display: inline-block;
   vertical-align: top;
+
+  @media (min-width: $tablet-width) {
+    grid-area: picture;
+  }
 }
 
 .edit__image {
   display: block;
 }
 
+.edit__phone-wrapper {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .edit__phone-filters {
   margin: 40px 0;
+  width: 194px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .edit__block-range {
   margin-bottom: 73px;
+  text-align: center;
+}
+
+.edit__wrapper {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: edit;
+    justify-self: end;
+  }
+}
+
+.edit__block-buttons {
+  @media (min-width: $tablet-width) {
+    grid-area: buttons;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-end;
+    justify-self: normal;
+    justify-content: space-between;
+  }
+}
+
+.edit__button {
+  width: 280px;
+
+  &:first-of-type {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+
+    &:first-of-type {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+
+    &:first-of-type {
+      margin-bottom: 0;
+    }
+  }
 }

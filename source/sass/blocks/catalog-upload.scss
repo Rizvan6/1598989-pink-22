@@ -5,4 +5,8 @@
 .catalog-upload__text {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 78px;
+  }
 }

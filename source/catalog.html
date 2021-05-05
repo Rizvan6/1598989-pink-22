@@ -10,41 +10,39 @@
 
 <body class="page__body">
   <header class="page-header">
+    <div class="page-header__menu-wrapper">
+      <div class="container page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/pink-header-mobile.svg" alt="Лого Пинк">
+        </a>
+        <nav class="main-nav page-header__nav">
+          <button class="main-nav__toogle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list list-unstyled">
+            <li class="main-nav__item main-nav__item--current">
+              <a href="index.html" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Фотография</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
     <div class="container">
-
-      <a class="page-header__logo">
-        <img src="img/pink-header-mobile.svg" alt="Лого Пинк">
-      </a>
-
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list list-unstyled">
-          <li class="main-nav__item main-nav__item--current">
-            <a href="index.html" class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Фотография</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <h1 class="headline page-header__headline-catalog">Фотографии<br> пользователей</h1>
     </div>
   </header>
 
   <main class="page-catalog">
-
-    <section class="intro page-catalog__intro">
-      <div class="container">
-        <h1 class="headline intro__headline">Фотографии<br> пользователей</h1>
-      </div>
-    </section>
 
     <section class="catalog">
       <div class="container">
@@ -52,93 +50,94 @@
         <p class="text-slogan catalog__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
           хватает ваших?</p>
 
-        <article class="photo-card catalog__photo-card">
-          <a href="#" сlass="photo-card__link photo-card__link--panorama">
-            <img class="photo-card__image photo-card__image--panorama" src="img/panorama-mobile.jpg"
-              alt="фотография-панорама моста" width="280" height="137">
+        <article class="photo-card photo-card--panorama">
+          <a href="#" class="photo-card__link photo-card__link--panorama">
+            <!--<img class="photo-card__image photo-card__image--panorama" src="img/panorama-mobile.jpg"
+              alt="фотография-панорама моста" width="280" height="137">-->
           </a>
-          <blockquote class="photo-card__post">
-            <cite class="photo-card__name">Анна <time class="photo-card__time">(5 минут назад)</time></cite>
-            <p class="photo-card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию
-              в перископе, задавайте свои вопросы!</p>
-            <button class="photo-card__button" type="button">Нравится: <span
+          <div class="photo-card__post photo-card__post--panorama">
+            <p class="photo-card__name">Анна <time class="photo-card__time">(5 минут назад)</time></p>
+            <p class="photo-card__text photo-card__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и
+              смотрите прямую трансляцию в <nobr>перископе, задавайте свои вопросы!</nobr>
+            </p>
+            <button class="photo-card__button photo-card__button--panorama" type="button">Нравится: <span
                 class="photo-card__likes">215</span></button>
-          </blockquote>
+          </div>
         </article>
 
-        <div class="catalog__photo-wrapper">
+        <div class="catalog__photos-wrapper">
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <img class="photo-card__image" src="img/auto-mobile.jpg" alt="камера и белый автомобиль" width="280"
-                height="180">
+              <!--<img class="photo-card__image" src="img/auto-mobile.jpg" alt="камера и белый автомобиль" width="280"
+                height="180">-->
             </a>
-            <blockquote class="photo-card__post">
-              <cite class="photo-card__name">Левон <time class="photo-card__time">(5 часов назад)</time></cite>
+            <div class="photo-card__post">
+              <p class="photo-card__name">Левон <time class="photo-card__time">(5 часов назад)</time></p>
               <p class="photo-card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <button class="photo-card__button" type="button">Нравится: <span
                   class="photo-card__likes">356</span></button>
-            </blockquote>
+            </div>
           </article>
 
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <img class="photo-card__image" src="img/drums-mobile.jpg" alt="барабаны" width="280" height="180">
+              <!--<img class="photo-card__image" src="img/drums-mobile.jpg" alt="барабаны" width="280" height="180">-->
             </a>
-            <blockquote class="photo-card__post">
-              <cite class="photo-card__name">Антон <time class="photo-card__time">(12 часов назад)</time></cite>
+            <div class="photo-card__post">
+              <p class="photo-card__name">Антон <time class="photo-card__time">(12 часов назад)</time></p>
               <p class="photo-card__text">Соседи будут рады!</p>
               <button class="photo-card__button" type="button">Нравится: <span
                   class="photo-card__likes">666</span></button>
-            </blockquote>
+            </div>
           </article>
 
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <img class="photo-card__image" src="img/windows-mobile.jpg" alt="окна" width="280" height="180">
+              <!--<img class="photo-card__image" src="img/windows-mobile.jpg" alt="окна" width="280" height="180">-->
             </a>
-            <blockquote class="photo-card__post">
-              <cite class="photo-card__name">Борис <time class="photo-card__time">(20 часов назад)</time></cite>
+            <div class="photo-card__post">
+              <p class="photo-card__name">Борис <time class="photo-card__time">(20 часов назад)</time></p>
               <p class="photo-card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <button class="photo-card__button" type="button">Нравится: <span
                   class="photo-card__likes">215</span></button>
-            </blockquote>
+            </div>
           </article>
 
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <img class="photo-card__image" src="img/kuban-mobile.jpg" alt="фестиваль Кубанская бухча" width="280"
-                height="180">
+              <!--<img class="photo-card__image" src="img/kuban-mobile.jpg" alt="фестиваль Кубанская бухча" width="280"
+                height="180">-->
             </a>
-            <blockquote class="photo-card__post">
-              <cite class="photo-card__name">Сергей <time class="photo-card__time">(25 часов назад)</time></cite>
+            <div class="photo-card__post">
+              <p class="photo-card__name">Сергей <time class="photo-card__time">(25 часов назад)</time></p>
               <p class="photo-card__text">Самая кубанская в мире!</p>
               <button class="photo-card__button" type="button">Нравится: <span
                   class="photo-card__likes">4</span></button>
-            </blockquote>
+            </div>
           </article>
 
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <img class="photo-card__image" src="img/legs-mobile.jpg" alt="ноги на фоне горы" width="280" height="180">
+              <!--<img class="photo-card__image" src="img/legs-mobile.jpg" alt="ноги на фоне горы" width="280" height="180">-->
             </a>
-            <blockquote class="photo-card__post">
-              <cite class="photo-card__name">Максим <time class="photo-card__time">(40 часов назад)</time></cite>
+            <div class="photo-card__post">
+              <p class="photo-card__name">Максим <time class="photo-card__time">(40 часов назад)</time></p>
               <p class="photo-card__text">Где снег-то?</p>
               <button class="photo-card__button" type="button">Нравится: <span
                   class="photo-card__likes">150</span></button>
-            </blockquote>
+            </div>
           </article>
 
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <img class="photo-card__image" src="img/wing-mobile.jpg" alt="крыло самолета" width="280" height="180">
+              <!--<img class="photo-card__image" src="img/wing-mobile.jpg" alt="крыло самолета" width="280" height="180">-->
             </a>
-            <blockquote class="photo-card__post">
-              <cite class="photo-card__name">Надежда <time class="photo-card__time">(45 часов назад)</time></cite>
+            <div class="photo-card__post">
+              <p class="photo-card__name">Надежда <time class="photo-card__time">(45 часов назад)</time></p>
               <p class="photo-card__text">Всем GM и взаимные лайки!</p>
               <button class="photo-card__button" type="button">Нравится: <span
                   class="photo-card__likes">2560</span></button>
-            </blockquote>
+            </div>
           </article>
         </div>
       </div>
@@ -204,7 +203,7 @@
 
             <div class="edit__block-buttons">
               <button type="submit" class="button button--border-pink edit__button">Запостить</button>
-              <button type="button" class="button button--border-grey edit__button">Отмена</button>
+              <button type="reset" class="button button--border-grey edit__button">Отмена</button>
             </div>
           </form>
         </div>
@@ -213,9 +212,9 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container">
-      <a href="#" class="page-footer__logo">
-        <img src="img/pink-footer-mobile.svg" alt="Лого Пинк">
+    <div class="page-footer__container container">
+      <a href="#" class="page-footer__logo-link">
+        <img class="page-footer__logo" src="img/pink-footer-mobile.svg" alt="Лого Пинк">
       </a>
       <ul class="page-footer__social-list list-unstyled">
         <li class="page-footer__social-item">
@@ -239,8 +238,8 @@
       </ul>
       <p class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
-        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <img src="img/icon-html-academy.svg" alt="Лого htmlacademy">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img class="page-footer__htmlacademy-logo" src="img/icon-html-academy.svg" alt="Лого htmlacademy">
         </a>
       </p>
     </div>
