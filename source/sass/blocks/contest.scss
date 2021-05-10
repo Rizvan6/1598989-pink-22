@@ -50,7 +50,7 @@
     padding: 0 130px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
   }
 }
 
@@ -103,6 +103,10 @@
 
     @media (min-width: $desktop-width) {
       padding: 36px 72px 52px 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 53px 74px 54px 74px;
     }
   }
 
@@ -192,6 +196,12 @@
   }
 }
 
+.contest__achievements-linebreak {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .contest__achievements-list {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -257,6 +267,7 @@
 
 .contest__contacts-item {
   margin-bottom: 28px;
+  position: relative;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -267,6 +278,34 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
+    &--phone::before {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      top: 2px;
+      right: 2px;
+      background-color: $basic-grey;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      z-index: 10;
+    }
+
+    &--email::before {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      top: 2px;
+      right: 2px;
+      background-color: $basic-grey;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      z-index: 10;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -307,15 +346,17 @@
 }
 
 .contest__application-title {
-  margin-bottom: 42px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    width: 368px;
+    text-align: center;
   }
 }
 
 .contest__application-item {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -373,6 +414,14 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
+  }
+}
+
+.contest__button {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
   }
 }
 

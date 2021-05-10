@@ -4,10 +4,8 @@
 
 .characteristics__intro {
   @include background-transition;
-  padding: 46px 0 70px 0;
+  padding: 44px 0 70px 0;
   background-color: $basic-white;
-  outline: 5px solid rgba(100, 250, 145, 0.7);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     padding: 58px 0 108px 0;
@@ -19,7 +17,7 @@
 }
 
 .characteristics__slogan:first-of-type {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -30,16 +28,15 @@
   padding-top: 200px;
   padding-bottom: 280px;
   background-color: $basic-lightgrey;
-  outline: 5px solid rgba(50, 50, 145, 0.7);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 170px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 400px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
 }
 

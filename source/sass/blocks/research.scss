@@ -2,15 +2,14 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    padding: 102px 0 120px 0;
+    padding: 102px 0 90px 0;
     background-color: $basic-white;
-    outline: 5px solid rgba(100, 250, 145, 0.7);
-    outline-offset: -5px;
     display: block;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $basic-lightgrey;
+    padding: 115px 0 120px 0;
   }
 }
 
@@ -57,6 +56,14 @@
 .research__link {
   color: $basic-pink;
   text-decoration: underline;
+
+  &:hover {
+    color: $basic-black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;

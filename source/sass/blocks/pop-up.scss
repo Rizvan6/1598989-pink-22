@@ -9,14 +9,81 @@
   box-shadow: 0 4px 20px $box-shadow-dark;
   margin: auto;
   text-align: center;
+  z-index: 100;
   display: none;
 
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+
   &--failure {
-    padding: 40px 0 50px 0;
+    padding-top: 38px;
+    padding-bottom: 50px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 38px;
+      padding-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+    }
   }
 
   &--success {
     padding-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 40px;
+    }
+  }
+}
+
+.pop-up__wrapper {
+  &--failure {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 80px;
+      padding-left: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 214px;
+      padding-left: 214px;
+    }
+  }
+
+  &--success {
+    padding-left: 27px;
+    padding-right: 27px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 74px;
+      padding-left: 74px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 192px;
+      padding-right: 192px;
+    }
+  }
+}
+
+.pop-up__wrapper-button-success {
+  background-color: $basic-lightgrey;
+  padding: 48px 0;
+}
+
+.pop-up__wrapper-button-failure {
+  @media (min-width: $desktop-width) {
+    background-color: $basic-lightgrey;
+    padding: 50px 0;
   }
 }
 
@@ -25,13 +92,65 @@
   font-size: 18px;
   color: $basic-black;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .pop-up__text {
-  margin: 30px 0 34px 0;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  &--failure {
+    margin: 18px 0 46px 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 26px 0 32px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 26px 0 62px 0;
+    }
+  }
+
+  &--success {
+    margin: 30px 0 34px 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 30px 0 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 32px 0 38px 0;
+    }
+  }
 }
 
-.pop-up__block-button {
-  background-color: $basic-lightgrey;
-  padding: 50px 0;
+.pop-up__button {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
+
+  &--success {
+    @media (min-width: $desktop-width) {
+      width: 456px;
+    }
+  }
+}
+
+.pop-up__linebreak {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

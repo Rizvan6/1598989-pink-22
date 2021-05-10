@@ -10,32 +10,35 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__menu-wrapper">
-      <div class="container page-header__container">
-        <a class="page-header__logo" href="index.html">
+    <nav class="main-nav page-header__nav main-nav--closed">
+      <!--main-nav--opened (открывает меню); main-nav--closed (закрывает); menu-nav--nojs (JS отключен)-->
+      <div class="container main-nav__container">
+
+        <a class="main-nav__logo">
           <img src="img/pink-header-mobile.svg" alt="Лого Пинк">
         </a>
-        <nav class="main-nav page-header__nav">
-          <button class="main-nav__toogle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list list-unstyled">
-            <li class="main-nav__item main-nav__item--current">
-              <a href="index.html" class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link">Фотография</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
+
+        <button class="main-nav__toogle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="main-nav__list list-unstyled">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link">Фотография</a>
+          </li>
+          <li class="main-nav__item ">
+            <a href="form.html" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link" target="_blank">HTML
+              Academy</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
 
     <div class="container">
       <h1 class="headline page-header__headline-catalog">Фотографии<br> пользователей</h1>
@@ -60,8 +63,11 @@
             <p class="photo-card__text photo-card__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и
               смотрите прямую трансляцию в <nobr>перископе, задавайте свои вопросы!</nobr>
             </p>
-            <button class="photo-card__button photo-card__button--panorama" type="button">Нравится: <span
-                class="photo-card__likes">215</span></button>
+            <div class="photo-card__wrapper-likes photo-card__wrapper-likes--panorama">
+              <button class="photo-card__button photo-card__button--panorama" type="button"
+                aria-label="Нравится"></button>
+              <span class="photo-card__likes">Нравится: 215</span>
+            </div>
           </div>
         </article>
 
@@ -74,8 +80,10 @@
             <div class="photo-card__post">
               <p class="photo-card__name">Левон <time class="photo-card__time">(5 часов назад)</time></p>
               <p class="photo-card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <button class="photo-card__button" type="button">Нравится: <span
-                  class="photo-card__likes">356</span></button>
+              <div class="photo-card__wrapper-likes">
+                <button class="photo-card__button" type="button" aria-label="Нравится"></button>
+                <span class="photo-card__likes">Нравится: 356</span>
+              </div>
             </div>
           </article>
 
@@ -86,8 +94,10 @@
             <div class="photo-card__post">
               <p class="photo-card__name">Антон <time class="photo-card__time">(12 часов назад)</time></p>
               <p class="photo-card__text">Соседи будут рады!</p>
-              <button class="photo-card__button" type="button">Нравится: <span
-                  class="photo-card__likes">666</span></button>
+              <div class="photo-card__wrapper-likes">
+                <button class="photo-card__button" type="button" aria-label="Нравится"></button>
+                <span class="photo-card__likes">Нравится: 666</span>
+              </div>
             </div>
           </article>
 
@@ -98,8 +108,10 @@
             <div class="photo-card__post">
               <p class="photo-card__name">Борис <time class="photo-card__time">(20 часов назад)</time></p>
               <p class="photo-card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <button class="photo-card__button" type="button">Нравится: <span
-                  class="photo-card__likes">215</span></button>
+              <div class="photo-card__wrapper-likes">
+                <button class="photo-card__button" type="button" aria-label="Нравится"></button>
+                <span class="photo-card__likes">Нравится: 215</span>
+              </div>
             </div>
           </article>
 
@@ -111,8 +123,10 @@
             <div class="photo-card__post">
               <p class="photo-card__name">Сергей <time class="photo-card__time">(25 часов назад)</time></p>
               <p class="photo-card__text">Самая кубанская в мире!</p>
-              <button class="photo-card__button" type="button">Нравится: <span
-                  class="photo-card__likes">4</span></button>
+              <div class="photo-card__wrapper-likes">
+                <button class="photo-card__button" type="button" aria-label="Нравится"></button>
+                <span class="photo-card__likes">Нравится: 4</span>
+              </div>
             </div>
           </article>
 
@@ -123,8 +137,10 @@
             <div class="photo-card__post">
               <p class="photo-card__name">Максим <time class="photo-card__time">(40 часов назад)</time></p>
               <p class="photo-card__text">Где снег-то?</p>
-              <button class="photo-card__button" type="button">Нравится: <span
-                  class="photo-card__likes">150</span></button>
+              <div class="photo-card__wrapper-likes">
+                <button class="photo-card__button" type="button" aria-label="Нравится"></button>
+                <span class="photo-card__likes">Нравится: 150</span>
+              </div>
             </div>
           </article>
 
@@ -135,8 +151,10 @@
             <div class="photo-card__post">
               <p class="photo-card__name">Надежда <time class="photo-card__time">(45 часов назад)</time></p>
               <p class="photo-card__text">Всем GM и взаимные лайки!</p>
-              <button class="photo-card__button" type="button">Нравится: <span
-                  class="photo-card__likes">2560</span></button>
+              <div class="photo-card__wrapper-likes">
+                <button class="photo-card__button" type="button" aria-label="Нравится"></button>
+                <span class="photo-card__likes">Нравится: 2560</span>
+              </div>
             </div>
           </article>
         </div>
@@ -158,47 +176,34 @@
               <img class="edit__image" src="img/winter-mobile.jpg" alt="заснеженная дорога" width="280" height="374">
             </a>
 
-            <div class="edit__phone-wrapper">
-              <div class="edit__phone-filters">
-                <button class="edit__filter edit__filter--checked" aria-label="настройка выравнивания">
-                  <img class="edit__filter-icon" src="" alt="">
-                </button>
-                <button class="edit__filter" aria-label="настройка насыщенности">
-                  <img class="edit__filter-icon" src="" alt="">
-                </button>
-                <button class="edit__filter" aria-label="настройка яркости">
-                  <img class="edit__filter-icon" src="" alt="">
-                </button>
-              </div>
-
-              <div class="edit__block-range">
-                <label class="edit__label-range" aria-label="ползунок для настройки">
-                  <input class="edit__range" type="range" min="0" max="100" value="80" step="1" name="alignment">
-                </label>
-              </div>
-            </div>
-
             <div class="edit__wrapper">
-              <ul class="edit__filters list-unstyled">
-                <li class="edit__item">
+              <div class="edit__filters list-unstyled">
+
+                <button type="button" class="edit__filter edit__filter--crop" aria-label="настройка выравнивания">
+                  <img class="edit__filter-icon--checked" src="" alt="">
+                </button>
+                <label class="edit__label-range" aria-label="ползунок для настройки выравнивания">
+                  <input class="edit__range range" type="range" min="0" max="100" value="80" step="1" name="alignment">
+                </label>
+
+
+                <button type="button" class="edit__filter edit__filter--fill" aria-label="настройка насыщенности">
                   <img class="edit__filter-icon" src="" alt="">
-                  <label class="edit__label-range" aria-label="ползунок для настройки выравнивания">
-                    <input class="edit__range" type="range" min="0" max="100" value="80" step="1" name="alignment">
-                  </label>
-                </li>
-                <li class="edit__item">
+                </button>
+                <label class="edit__label-range edit__label-range--hidden"
+                  aria-label="ползунок для настройки насыщенности">
+                  <input class="edit__range range" type="range" min="0" max="100" value="20" step="1" name="saturation">
+                </label>
+
+
+                <button type="button" class="edit__filter edit__filter--contrast" aria-label="настройка яркости">
                   <img class="edit__filter-icon" src="" alt="">
-                  <label class="edit__label-range" aria-label="ползунок для настройки насыщенности">
-                    <input class="edit__range" type="range" min="0" max="100" value="20" step="1" name="saturation">
-                  </label>
-                </li>
-                <li class="edit__item">
-                  <img class="edit__filter-icon" src="" alt="">
-                  <label class="edit__label-range" aria-label="ползунок для настройки яркости">
-                    <input class="edit__range" type="range" min="0" max="100" value="50" step="1" name="brightness">
-                  </label>
-                </li>
-              </ul>
+                </button>
+                <label class="edit__label-range edit__label-range--hidden" aria-label="ползунок для настройки яркости">
+                  <input class="edit__range range" type="range" min="0" max="100" value="50" step="1" name="brightness">
+                </label>
+
+              </div>
             </div>
 
             <div class="edit__block-buttons">
@@ -218,19 +223,19 @@
       </a>
       <ul class="page-footer__social-list list-unstyled">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#" target="_blank">
+          <a class="page-footer__social-link" href="https://twitter.com/twitter" target="_blank">
             <span class="visually-hidden">Твиттер</span>
             <img src="img/icon-twitter.svg" alt="Лого Твиттер">
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#" target="_blank">
+          <a class="page-footer__social-link" href="https://www.facebook.com/" target="_blank">
             <span class="visually-hidden">Фейсбук</span>
             <img src="img/icon-facebook.svg" alt="Лого Фейсбук">
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#" target="_blank">
+          <a class="page-footer__social-link" href="https://www.youtube.com/" target="_blank">
             <span class="visually-hidden">Ютюб</span>
             <img src="img/icon-youtube.svg" alt="Лого Ютюб">
           </a>
