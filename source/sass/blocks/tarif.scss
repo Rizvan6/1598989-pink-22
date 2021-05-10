@@ -1,8 +1,6 @@
 .tarif {
   background-color: $basic-lightgrey;
   padding: 209px 0 49px 0;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 68px;
@@ -15,7 +13,7 @@
 
 .tarif__table {
   border-collapse: collapse;
-  display: none; /* временно */
+  display: none; /*временно */
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -32,8 +30,8 @@
   text-transform: uppercase;
   border-radius: 1px;
 
-  &:not(:first-of-type):not(:last-of-type) {
-    border-left-color: $basic-lightgrey;
+  &:nth-of-type(2),
+  &:nth-of-type(3) {
     border-right-color: $basic-lightgrey;
   }
 
@@ -44,6 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 18px;
     padding-top: 20px;
     padding-bottom: 22px;
     min-width: 233px;
@@ -65,6 +64,8 @@
   color: $basic-darkblue;
   background-color: $basic-white;
   border: 2px solid $basic-grey;
+  position: relative;
+  padding: 18px;
 
   @media (max-width: $mobile-width-only) {
     &:first-of-type {
@@ -80,6 +81,7 @@
   @media (min-width: $desktop-width) {
     min-width: 233px;
     padding: 20px;
+    font-size: 18px;
   }
 }
 
@@ -91,7 +93,48 @@
   }
 }
 
+.tarif__value {
+  &--yes {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    background: url("../img/yes.svg") no-repeat 0 0;
+
+    @media (min-width: $tablet-width) {
+      top: 13px;
+      left: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      left: 100px;
+    }
+  }
+
+  &--no {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background: url("../img/no.svg") no-repeat 0 0;
+
+    @media (min-width: $tablet-width) {
+      top: 13px;
+      left: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      left: 100px;
+    }
+  }
+}
+
 .tarif__toogles {
+  margin-bottom: 0;
+  margin-top: 42px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }

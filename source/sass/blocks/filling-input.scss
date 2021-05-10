@@ -9,9 +9,20 @@
   border-radius: 1px;
   padding: 14px 18px;
   resize: none;
+  position: relative;
+  background-color: $basic-white;
 
   &::placeholder {
     color: $basic-darkblue;
+  }
+
+  &:hover {
+    border-color: $basic-darkblue;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $basic-pink;
   }
 
   @media (max-width: $mobile-width-only) {

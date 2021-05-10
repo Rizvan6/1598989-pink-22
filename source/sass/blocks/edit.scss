@@ -52,34 +52,111 @@
   display: block;
 }
 
-.edit__phone-wrapper {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.edit__phone-filters {
-  margin: 40px 0;
-  width: 194px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.edit__block-range {
-  margin-bottom: 73px;
-  text-align: center;
-}
-
 .edit__wrapper {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
+  margin: 40px 0;
 
   @media (min-width: $tablet-width) {
     grid-area: edit;
     justify-self: end;
+    margin: 0;
+  }
+}
+
+.edit__filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  @media (max-width: $mobile-width-only) {
+    justify-content: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 275px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    justify-content: flex-start;
+  }
+}
+
+.edit__filter {
+  width: 48px;
+  border: none;
+  background-color: red;
+  height: 17px;
+
+  &--crop {
+    @media (max-width: $mobile-width-only) {
+      order: -3;
+      margin-right: 35px;
+    }
+  }
+
+  &--fill {
+    @media (max-width: $mobile-width-only) {
+      order: -2;
+      margin-right: 35px;
+    }
+  }
+
+  &--contrast {
+    @media (max-width: $mobile-width-only) {
+      order: -1;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    margin-right: 29px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    margin-right: 44px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.edit__label-range {
+  margin-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 62px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &--hidden {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+}
+
+.edit__range {
+  margin: 0;
+  width: 240px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
   }
 }
 

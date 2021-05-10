@@ -1,7 +1,5 @@
 .contacts {
   background-color: $basic-white;
-  outline: 5px solid rgba(200, 50, 145, 0.7);
-  outline-offset: -5px;
   padding-top: 50px;
 
   @media (min-width: $tablet-width) {
@@ -67,4 +65,13 @@
   display: inline-block;
   vertical-align: top;
   margin-top: 13px;
+
+  &:hover {
+    color: $basic-darkblue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }

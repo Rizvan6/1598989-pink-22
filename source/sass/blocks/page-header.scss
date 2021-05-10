@@ -2,35 +2,7 @@
   background-color: blue;
 }
 
-.page-header__menu-wrapper {
-  background-color: rgba($basic-black, 0.5%);
-  padding: 21px 0;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-
-  @media (min-width: $tablet-width) {
-    padding: 27px 0 43px 0;
-  }
-}
-
-.page-header__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  @media (min-width: $desktop-width) {
-    align-items: flex-end;
-  }
-}
-
-.page-header__logo {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
-
 .page-header__application-wrapper {
-  outline: 5px solid rgba(250, 50, 145, 0.7);
-  outline-offset: -5px;
   padding-top: 30px;
 
   @media (min-width: $tablet-width) {
@@ -102,9 +74,4 @@
     padding-top: 74px;
     padding-bottom: 104px;
   }
-}
-
-.page-header__download {
-  outline: 5px solid rgba(250, 242, 0, 0.7);
-  outline-offset: -5px;
 }

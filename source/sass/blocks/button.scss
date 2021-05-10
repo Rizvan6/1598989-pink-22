@@ -8,6 +8,7 @@
   border-radius: 30px;
   background-color: transparent;
   padding: 16px 0;
+  cursor: pointer;
 
   &--green {
     line-height: 30px;
@@ -16,6 +17,15 @@
     border: 2px solid $button-form;
     color: $basic-white;
     background-color: $button-form;
+
+    &:hover {
+      border-color: $hover-button-form;
+      background-color: $hover-button-form;
+    }
+
+    &:active {
+      color: rgba($basic-white, 0.3%);
+    }
   }
 
   &--border-white {
@@ -23,16 +33,44 @@
     color: $basic-white;
     display: inline-block;
     vertical-align: top;
+
+    &:hover {
+      background-color: $basic-white;
+      color: $basic-pink;
+    }
+
+    &:active {
+      color: rgba($basic-pink, 0.3%);
+    }
   }
 
   &--border-pink {
     border: 3px solid $basic-pink;
     color: $basic-pink;
+
+    &:hover {
+      background-color: $basic-pink;
+      color: $basic-white;
+    }
+
+    &:active {
+      background-color: $basic-pink;
+      color: rgba($basic-white, 0.3);
+    }
   }
 
   &--border-grey {
     border: 3px solid $basic-darkblue;
     color: $basic-darkblue;
     opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      background-color: $basic-darkblue;
+      color: rgba($basic-white, 0.3);
+    }
   }
 }
