@@ -27,7 +27,7 @@ $track-border-color: $basic-darkblue;
 }
 
 .range {
-  -webkit-appearance: none;
+  appearance: none;
   background: transparent;
   margin: $thumb-height / 2 0;
 
@@ -50,10 +50,8 @@ $track-border-color: $basic-darkblue;
 
   &::-webkit-slider-thumb {
     @include thumb;
-    -webkit-appearance: none;
-    margin-top: (
-      (-$track-border-width * 0.5 + $track-height) / 2 - $thumb-height / 2
-    );
+    appearance: none;
+    margin-top: ((-$track-border-width * 0.5 + $track-height) / 2 - $thumb-height / 2);
   }
 
   &::-moz-range-track {
