@@ -9,7 +9,7 @@ $thumb-border-color: $basic-pink;
 
 $track-height: 2px;
 $track-border-width: 2px;
-$track-border-color: $basic-darkblue;
+$track-border-color: $basic-black;
 
 @mixin track {
   cursor: pointer;
@@ -51,7 +51,9 @@ $track-border-color: $basic-darkblue;
   &::-webkit-slider-thumb {
     @include thumb;
     appearance: none;
-    margin-top: ((-$track-border-width * 0.5 + $track-height) / 2 - $thumb-height / 2);
+    margin-top: (
+      (-$track-border-width * 0.5 + $track-height) / 2 - $thumb-height / 2
+    );
   }
 
   &::-moz-range-track {
@@ -89,5 +91,17 @@ $track-border-color: $basic-darkblue;
     &::-ms-fill-upper {
       cursor: not-allowed;
     }
+  }
+
+  &:active::-webkit-slider-thumb {
+    background: $basic-pink;
+  }
+
+  &:active::-moz-range-thumb {
+    background: $basic-pink;
+  }
+
+  &:active::-ms-thumb {
+    background: $basic-pink;
   }
 }

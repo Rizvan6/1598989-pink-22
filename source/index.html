@@ -14,8 +14,8 @@
       <!--main-nav--opened (открывает меню); main-nav--closed (закрывает); menu-nav--nojs (JS отключен)-->
       <div class="container main-nav__container">
 
-        <a class="main-nav__logo">
-          <img src="img/pink-header-mobile.svg" alt="Лого Пинк">
+        <a class="main-nav__logo-link">
+          <img class="main-nav__logo-image" src="img/pink-header-mobile.svg" alt="Лого Пинк">
         </a>
 
         <button class="main-nav__toogle" type="button">
@@ -46,7 +46,8 @@
     <div class="page-header__application-wrapper">
       <div class="page-header__content">
 
-        <p class="headline headline--app page-header__headline-main">Взгляните на жизнь иначе!</p>
+        <p class="headline headline--app page-header__headline-main">Взгляните<br class="headline__linebreak"> на жизнь
+          иначе!</p>
 
         <div class="download page-header__download">
           <div class="download__wrapper">
@@ -54,21 +55,21 @@
               target="_blank">Скачать приложение</a>
             <ul class="download__list list-unstyled">
               <li class="download__item">
-                <a href="https://www.apple.com/app-store/" target="_blank">
+                <a class="download__link" href="https://www.apple.com/app-store/" target="_blank">
                   <span class="visually-hidden">App Store</span>
-                  <img src="img/icon-apple.svg" alt="лого apple" width="47" height="56">
+                  <img class="download__icon" src="img/icon-apple.svg" alt="лого apple" width="47" height="56">
                 </a>
               </li>
               <li class="download__item">
-                <a href="https://play.google.com/store" target="_blank">
+                <a class="download__link" href="https://play.google.com/store" target="_blank">
                   <span class="visually-hidden">Google Play</span>
-                  <img src="img/icon-android.svg" alt="лого android" width="43" height="47">
+                  <img class="download__icon" src="img/icon-android.svg" alt="лого android" width="43" height="47">
                 </a>
               </li>
               <li class="download__item">
-                <a href="https://www.microsoft.com/en-us/store/apps/windows" target="_blank">
+                <a class="download__link" href="https://www.microsoft.com/en-us/store/apps/windows" target="_blank">
                   <span class="visually-hidden">Windows Store</span>
-                  <img src="img/icon-microsoft.svg" alt="лого windows" width="44" height="41">
+                  <img class="download__icon" src="img/icon-microsoft.svg" alt="лого windows" width="44" height="41">
                 </a>
               </li>
             </ul>
@@ -105,7 +106,7 @@
                 подписью, чтобы усилить эффект</p>
             </li>
             <li class="characteristics__item characteristics__item--friends">
-              <h3 class="characteristics__subtitle">Заводит новых друзей</h3>
+              <h3 class="characteristics__subtitle">Заводит<br class="characteristics__linebreak"> новых друзей</h3>
               <p class="characteristics__description">Ставьте лайки, комментируйте, делитесь фотографиями с
                 друзьями и заводите новых</p>
             </li>
@@ -117,9 +118,11 @@
     <section class="research">
       <div class=" research__container container">
         <div class="research__block">
-          <h2 class="research__subtitle">Эффект на 24 часа!</h2>
-          <p class="research__description">Британские ученые провели исследования и доказали, что положительный
-            эффект от использования приложения длится целые сутки!</p>
+          <h2 class="research__subtitle">Эффект <br class="research__linebreak-tablet"> на 24 часа!</h2>
+          <p class="research__description">Британские ученые провели исследования<br class="research__linebreak-tablet">
+            и доказали,<br class="research__linebreak-desktop"> что положительный эффект<br
+              class="research__linebreak-tablet"> от использования приложения длится целые
+            сутки!</p>
           <a class="research__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -130,11 +133,11 @@
 
     <section class="reviews">
 
-      <div class="container slider">
+      <div class="container">
         <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviews__list slider__list">
+        <div class="reviews__list">
 
-          <blockquote class="reviews__item reviews__item--current slider__item slider__item--current">
+          <blockquote class="reviews__item reviews__item--current">
             <cite class="reviews__author-name">Николай Петров<br><span class="reviews__author-info">25 лет, водитель
                 трамвая</span></cite>
             <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому
@@ -142,14 +145,14 @@
               фотографии!»</p>
           </blockquote>
 
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item">
             <cite class="reviews__author-name">Дмитрий Иванов<br><span class="reviews__author-info">27 лет,
                 врач-хирург</span></cite>
             <p class="reviews__description">«Пользуюсь данным приложением чуть больше месяца. В
               обращении достаточно простой и понятный!»</p>
           </blockquote>
 
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item">
             <cite class="reviews__author-name">Алексей Орлов<br><span class="reviews__author-info">34 года,
                 менеджер</span></cite>
             <p class="reviews__description">«Приложение дня - это отличная программа для Android!»</p>
@@ -174,10 +177,10 @@
           </button>
         </div>
 
-        <p class="reviews__toogles slider__toogles">
-          <button type="button" class="slider__toogle slider__toogle--current" aria-label="1"></button>
-          <button type="button" class="slider__toogle" aria-label="2"></button>
-          <button type="button" class="slider__toogle" aria-label="3"></button>
+        <p class="reviews__toogles slider-toogles">
+          <button type="button" class="slider-toogles__toogle slider-toogles__toogle--current" aria-label="1"></button>
+          <button type="button" class="slider-toogles__toogle" aria-label="2"></button>
+          <button type="button" class="slider-toogles__toogle" aria-label="3"></button>
         </p>
 
       </div>
@@ -188,9 +191,9 @@
 
 
     <section class="tarif">
-      <div class="container slider">
-        <h2 class="visually-hidden">Наши тарифы</h2>
-        <table class="tarif__table slider__list">
+      <h2 class="visually-hidden">Наши тарифы</h2>
+      <div class="container tarif__slider">
+        <table class="tarif__table">
           <thead class="tarif__thead">
             <tr>
               <th></th>
@@ -204,56 +207,77 @@
             <tr>
               <td class="tarif__table-data">Розовый фильтр</td>
               <td class="tarif__table-data">
-                <span class="tarif__text-mobile">Розовый фильтр</span>
-                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                <div class="tarif__feature">
+                  <span class="tarif__text-mobile">Розовый фильтр</span>
+                  <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                </div>
               </td>
               <td class="tarif__table-data">
-                <span class="tarif__text-mobile">Розовый фильтр</span>
-                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                <div class="tarif__feature">
+                  <span class="tarif__text-mobile">Розовый фильтр</span>
+                  <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                </div>
               </td>
               <td class="tarif__table-data">
-                <span class="tarif__text-mobile">Розовый фильтр</span>
-                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                <div class="tarif__feature">
+                  <span class="tarif__text-mobile">Розовый фильтр</span>
+                  <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                </div>
               </td>
             </tr>
 
             <tr>
               <td class="tarif__table-data">Смайлики</td>
               <td class="tarif__table-data">
-                <span class="tarif__text-mobile">Смайлики</span>
-                <span class="tarif__value tarif__value--no" aria-label="Нет"></span>
+                <div class="tarif__feature">
+                  <span class="tarif__text-mobile">Смайлики</span>
+                  <span class="tarif__value tarif__value--no" aria-label="Нет"></span>
+                </div>
+
               </td>
               <td class="tarif__table-data">
-                <span class="tarif__text-mobile">Смайлики</span>
-                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                <div class="tarif__feature">
+                  <span class="tarif__text-mobile">Смайлики</span>
+                  <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                </div>
+
               </td>
               <td class="tarif__table-data">
-                <span class="tarif__text-mobile">Смайлики</span>
-                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                <div class="tarif__feature">
+                  <span class="tarif__text-mobile">Смайлики</span>
+                  <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                </div>
               </td>
             </tr>
 
             <tr>
               <td class="tarif__table-data">Комментарии</td>
               <td class="tarif__table-data">
-                <span class="tarif__text-mobile">Комментарии</span>
-                <span class="tarif__value tarif__value--no" aria-label="Нет"></span>
+                <div class="tarif__feature">
+                  <span class="tarif__text-mobile">Комментарии</span>
+                  <span class="tarif__value tarif__value--no" aria-label="Нет"></span>
+                </div>
               </td>
               <td class="tarif__table-data">
-                <span class="tarif__text-mobile">Комментарии</span>
-                <span class="tarif__value tarif__value--no" aria-label="Нет"></span>
+                <div class="tarif__feature">
+                  <span class="tarif__text-mobile">Комментарии</span>
+                  <span class="tarif__value tarif__value--no" aria-label="Нет"></span>
+                </div>
+
               </td>
               <td class="tarif__table-data">
-                <span class="tarif__text-mobile">Комментарии</span>
-                <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                <div class="tarif__feature">
+                  <span class="tarif__text-mobile">Комментарии</span>
+                  <span class="tarif__value tarif__value--yes" aria-label="Да"></span>
+                </div>
               </td>
             </tr>
           </tbody>
         </table>
-        <p class="tarif__toogles slider__toogles">
-          <button type="button" class="slider__toogle" aria-label="1"></button>
-          <button type="button" class="slider__toogle slider__toogle--current" aria-label="2"></button>
-          <button type="button" class="slider__toogle" aria-label="3"></button>
+        <p class="tarif__toogles slider-toogles">
+          <button type="button" class="slider-toogles__toogle" aria-label="1"></button>
+          <button type="button" class="slider-toogles__toogle slider-toogles__toogle--current" aria-label="2"></button>
+          <button type="button" class="slider-toogles__toogle" aria-label="3"></button>
         </p>
       </div>
     </section>

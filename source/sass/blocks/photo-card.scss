@@ -2,8 +2,39 @@
   @media (min-width: $tablet-width) {
     width: 300px;
     min-height: 455px;
+  }
 
-    &--panorama {
+  &--panorama {
+    position: relative;
+
+    &::before {
+      content: "Панорама дня";
+      font-family: $font-main;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 140px;
+      padding: 12px 0;
+      color: $basic-white;
+      background-color: $basic-pink;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 2;
+
+      @media (min-width: $tablet-width) {
+        top: 57px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 54px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
       width: 100%;
     }
   }
@@ -13,18 +44,6 @@
   background-color: $basic-darkblue;
   display: inline-block;
   vertical-align: top;
-  width: 280px;
-  height: 180px;
-
-  @media (min-width: $tablet-width) {
-    width: 300px;
-    height: 300px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 300px;
-    height: 400px;
-  }
 
   &--panorama {
     width: 100vw;
@@ -37,6 +56,34 @@
     transform: translate(-50%);
     display: flex;
     justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      height: 509px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 506px;
+    }
+  }
+}
+
+.photo-card__image {
+  display: block;
+  width: 280px;
+  height: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
+
+  &--panorama {
+    width: 1200px;
+    height: 137px;
 
     @media (min-width: $tablet-width) {
       height: 509px;
