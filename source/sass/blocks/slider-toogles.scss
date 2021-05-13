@@ -1,12 +1,4 @@
-.slider__item {
-  display: none;
-
-  &--current {
-    display: block;
-  }
-}
-
-.slider__toogles {
+.slider-toogles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -16,7 +8,7 @@
   margin-left: auto;
 }
 
-.slider__toogle {
+.slider-toogles__toogle {
   width: 6px;
   height: 6px;
   background-color: rgba($basic-black, 0.3);
@@ -25,11 +17,11 @@
   padding: 0;
   cursor: pointer;
 
-  &:hover:not(.slider__toogle--current) {
+  &:hover:not(.slider-toogles__toogle--current) {
     background-color: rgba($basic-black, 0.6);
   }
 
-  &:active:not(.slider__toogle--current) {
+  &:active:not(.slider-toogles__toogle--current) {
     background-color: rgba($basic-black, 0.1);
   }
 

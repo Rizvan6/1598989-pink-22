@@ -1,8 +1,9 @@
 .research {
   display: none;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 102px 0 90px 0;
+    padding: 96px 0 90px 0;
     background-color: $basic-white;
     display: block;
   }
@@ -14,13 +15,38 @@
 }
 
 .research__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 238px;
+      height: 276px;
+      background: url("../img/24-table.svg") no-repeat 0 0;
+      left: 3%;
+      top: -16%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 298px;
+      height: 345px;
+      background: url("../img/24-desktop.svg") no-repeat 0 0;
+      left: 11%;
+      top: -46%;
+    }
+  }
 }
 
 .research__block {
-  width: 310px;
+  @media (min-width: $tablet-width) {
+    width: 310px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 534px;
@@ -28,12 +54,14 @@
 }
 
 .research__subtitle {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: $basic-black;
-  margin: 0;
-  width: 168px;
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: $basic-black;
+    margin: 0;
+    width: 168px;
+  }
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
@@ -42,27 +70,47 @@
 }
 
 .research__description {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    margin-top: 36px;
-    margin-bottom: 46px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+}
+
+.research__linebreak-tablet {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.research__linebreak-desktop {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
 .research__link {
-  color: $basic-pink;
-  text-decoration: underline;
+  @media (min-width: $tablet-width) {
+    color: $basic-pink;
+    text-decoration: underline;
 
-  &:hover {
-    color: $basic-black;
-  }
+    &:hover {
+      color: $basic-black;
+    }
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {

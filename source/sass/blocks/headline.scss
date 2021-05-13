@@ -24,3 +24,9 @@
     }
   }
 }
+
+.headline__linebreak {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

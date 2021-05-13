@@ -14,8 +14,8 @@
       <!--main-nav--opened (открывает меню); main-nav--closed (закрывает); menu-nav--nojs (JS отключен)-->
       <div class="container main-nav__container">
 
-        <a class="main-nav__logo">
-          <img src="img/pink-header-mobile.svg" alt="Лого Пинк">
+        <a href="index.html" class="main-nav__logo-link">
+          <img class="main-nav__logo-image" src="img/pink-header-mobile.svg" alt="Лого Пинк">
         </a>
 
         <button class="main-nav__toogle" type="button">
@@ -55,8 +55,12 @@
 
         <article class="photo-card photo-card--panorama">
           <a href="#" class="photo-card__link photo-card__link--panorama">
-            <!--<img class="photo-card__image photo-card__image--panorama" src="img/panorama-mobile.jpg"
-              alt="фотография-панорама моста" width="280" height="137">-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo-card__image photo-card__image--panorama" src="img/panorama-mobile.jpg"
+                srcset="img/panorama-mobile@2x.jpg 2x" alt="фотография-панорама моста">
+            </picture>
           </a>
           <div class="photo-card__post photo-card__post--panorama">
             <p class="photo-card__name">Анна <time class="photo-card__time">(5 минут назад)</time></p>
@@ -74,8 +78,12 @@
         <div class="catalog__photos-wrapper">
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <!--<img class="photo-card__image" src="img/auto-mobile.jpg" alt="камера и белый автомобиль" width="280"
-                height="180">-->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/car-desktop.jpg 1x, img/car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/car-tablet.jpg 1x, img/car-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/car-mobile.jpg" srcset="img/car-mobile@2x.jpg 2x"
+                  alt="камера и белый автомобиль">
+              </picture>
             </a>
             <div class="photo-card__post">
               <p class="photo-card__name">Левон <time class="photo-card__time">(5 часов назад)</time></p>
@@ -89,7 +97,12 @@
 
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <!--<img class="photo-card__image" src="img/drums-mobile.jpg" alt="барабаны" width="280" height="180">-->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/drums-desktop.jpg 1x, img/drums-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/drums-tablet.jpg 1x, img/drums-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/drums-mobile.jpg" srcset="img/drums-mobile@2x.jpg 2x"
+                  alt="барабаны">
+              </picture>
             </a>
             <div class="photo-card__post">
               <p class="photo-card__name">Антон <time class="photo-card__time">(12 часов назад)</time></p>
@@ -103,7 +116,12 @@
 
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <!--<img class="photo-card__image" src="img/windows-mobile.jpg" alt="окна" width="280" height="180">-->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/windows-desktop.jpg 1x, img/windows-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/windows-tablet.jpg 1x, img/windows-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/windows-mobile.jpg" srcset="img/windows-mobile@2x.jpg 2x"
+                  alt="окна">
+              </picture>
             </a>
             <div class="photo-card__post">
               <p class="photo-card__name">Борис <time class="photo-card__time">(20 часов назад)</time></p>
@@ -117,8 +135,13 @@
 
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <!--<img class="photo-card__image" src="img/kuban-mobile.jpg" alt="фестиваль Кубанская бухча" width="280"
-                height="180">-->
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/festival-desktop.jpg 1x, img/festival-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/festival-tablet.jpg 1x, img/festival-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/festival-mobile.jpg" srcset="img/festival-mobile@2x.jpg 2x"
+                  alt="фестиваль Кубанская бухча">
+              </picture>
             </a>
             <div class="photo-card__post">
               <p class="photo-card__name">Сергей <time class="photo-card__time">(25 часов назад)</time></p>
@@ -132,7 +155,12 @@
 
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <!--<img class="photo-card__image" src="img/legs-mobile.jpg" alt="ноги на фоне горы" width="280" height="180">-->
+              <picture>
+                <source media="(min-width: 1200px)" srscet="img/legs-desktop.jpg 1x, img/legs-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/legs-tablet.jpg 1x, img/legs-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/legs-mobile.jpg" srcset="img/legs-mobile@2x.jpg 2x"
+                  alt="ноги на фоне горы">
+              </picture>
             </a>
             <div class="photo-card__post">
               <p class="photo-card__name">Максим <time class="photo-card__time">(40 часов назад)</time></p>
@@ -146,7 +174,12 @@
 
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
-              <!--<img class="photo-card__image" src="img/wing-mobile.jpg" alt="крыло самолета" width="280" height="180">-->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/wing-desktop.jpg 1x, img/wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/wing-tablet.jpg 1x, img/wing-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/wing-mobile.jpg" srcset="img/wing-mobile@2x.jpg 2x"
+                  alt="крыло самолета">
+              </picture>
             </a>
             <div class="photo-card__post">
               <p class="photo-card__name">Надежда <time class="photo-card__time">(45 часов назад)</time></p>
@@ -173,7 +206,11 @@
           <form action="https://echo.htmlacademy.ru" method="POST" class="edit__form">
 
             <a href="#" class="edit__link">
-              <img class="edit__image" src="img/winter-mobile.jpg" alt="заснеженная дорога" width="280" height="374">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/snow-tablet.jpg 1x, img/snow-tablet@2x.jpg 2x">
+                <img class="edit__image" src="img/snow-mobile.jpg" srcset="img/snow-mobile@2x.jpg 2x"
+                  alt="заснеженная дорога">
+              </picture>
             </a>
 
             <div class="edit__wrapper">
