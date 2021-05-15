@@ -109,6 +109,15 @@
     position: absolute;
     top: 30px;
     cursor: pointer;
+    opacity: 30%;
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 10%;
   }
 }
 
@@ -125,13 +134,9 @@
 }
 
 .reviews__arrow {
-  &:hover path {
-    opacity: 0.6;
-  }
-
-  &:active path {
-    opacity: 0.1;
-  }
+  width: 22px;
+  height: 41px;
+  fill: currentColor;
 }
 
 .reviews__toogles {

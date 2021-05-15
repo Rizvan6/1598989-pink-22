@@ -47,8 +47,14 @@
   }
 }
 
+.download__link {
+  display: block;
+}
+
 .download__icon {
   display: block;
+  max-width: 48px;
+  max-height: 56px;
 }
 
 .download__description {

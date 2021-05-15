@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Пинк</title>
 </head>
 
@@ -14,8 +18,16 @@
       <!--main-nav--opened (открывает меню); main-nav--closed (закрывает); menu-nav--nojs (JS отключен)-->
       <div class="container main-nav__container">
 
-        <a class="main-nav__logo-link">
-          <img class="main-nav__logo-image" src="img/pink-header-mobile.svg" alt="Лого Пинк">
+        <a class="main-nav__logo-link" aria-label="сайт Pink">
+          <svg class="main-nav__logo-image main-nav__logo-image--mobile" width="74" height="23">
+            <use xlink:href="img/sprite.svg#logo-pink-header-mobile"></use>
+          </svg>
+          <svg class="main-nav__logo-image main-nav__logo-image--tablet" width="145" height="40">
+            <use xlink:href="img/sprite.svg#logo-pink-header-tablet"></use>
+          </svg>
+          <svg class="main-nav__logo-image main-nav__logo-image--desktop" width="147" height="40">
+            <use xlink:href="img/sprite.svg#logo-pink-header-desktop"></use>
+          </svg>
         </a>
 
         <button class="main-nav__toogle" type="button">
@@ -55,21 +67,30 @@
               target="_blank">Скачать приложение</a>
             <ul class="download__list list-unstyled">
               <li class="download__item">
-                <a class="download__link" href="https://www.apple.com/app-store/" target="_blank">
+                <a class="download__link" href="https://www.apple.com/app-store/" target="_blank"
+                  aria-label="ссылка на App Store">
                   <span class="visually-hidden">App Store</span>
-                  <img class="download__icon" src="img/icon-apple.svg" alt="лого apple" width="47" height="56">
+                  <svg class="download__icon" width="47" height="56">
+                    <use xlink:href="img/sprite.svg#logo-apple"></use>
+                  </svg>
                 </a>
               </li>
               <li class="download__item">
-                <a class="download__link" href="https://play.google.com/store" target="_blank">
+                <a class="download__link" href="https://play.google.com/store" target="_blank"
+                  aria-label="ссылка на Google Play">
                   <span class="visually-hidden">Google Play</span>
-                  <img class="download__icon" src="img/icon-android.svg" alt="лого android" width="43" height="47">
+                  <svg class="download__icon" width="43" height="47">
+                    <use xlink:href="img/sprite.svg#logo-android"></use>
+                  </svg>
                 </a>
               </li>
               <li class="download__item">
-                <a class="download__link" href="https://www.microsoft.com/en-us/store/apps/windows" target="_blank">
+                <a class="download__link" href="https://www.microsoft.com/en-us/store/apps/windows" target="_blank"
+                  aria-label="ссылка на Windows Store">
                   <span class="visually-hidden">Windows Store</span>
-                  <img class="download__icon" src="img/icon-microsoft.svg" alt="лого windows" width="44" height="41">
+                  <svg class="download__icon" width="44" height="41">
+                    <use xlink:href="img/sprite.svg#logo-microsoft"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -159,21 +180,16 @@
           </blockquote>
 
           <button class="reviews__previous" type="button" aria-label="Предыдущий отзыв">
-            <svg width="22" height="41" viewBox="0 0 22 41" class="reviews__arrow reviews__arrow--left" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.3"
-                d="M2.0413 20.5035L21.7483 1.4144C21.8281 1.3379 21.8914 1.24683 21.9346 1.14646C21.9778 1.04608 22 0.938398 22 0.829635C22 0.720871 21.9778 0.613187 21.9346 0.512814C21.8914 0.41244 21.8281 0.321369 21.7483 0.24487C21.6686 0.167255 21.5738 0.105671 21.4694 0.0636507C21.365 0.0216304 21.2532 0 21.1401 0C21.0271 0 20.9153 0.0216304 20.8109 0.0636507C20.7065 0.105671 20.6117 0.167255 20.532 0.24487L0.252535 19.9088C0.17249 19.9862 0.108978 20.0781 0.0656429 20.1793C0.0223074 20.2805 0 20.389 0 20.4985C0 20.6081 0.0223074 20.7166 0.0656429 20.8178C0.108978 20.919 0.17249 21.0109 0.252535 21.0883L20.532 40.7621C20.6967 40.9157 20.9167 41.001 21.1453 41C21.3139 40.9985 21.4783 40.9488 21.6181 40.8572C21.7578 40.7656 21.8666 40.6362 21.9309 40.485C21.9952 40.3339 22.0122 40.1677 21.9797 40.0072C21.9473 39.8467 21.8668 39.6991 21.7483 39.5827L2.0413 20.5035Z"
-                fill="#283645" />
+            <svg class="reviews__arrow reviews__arrow--left" width="22" height="41" aria-hidden="true"
+              focusable="false">
+              <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
             </svg>
           </button>
           <button class="reviews__next" type="button" aria-label="Следующий отзыв">
-            <svg width="22" height="41" viewBox="0 0 22 41" class="reviews__arrow reviews__arrow--right" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.3"
-                d="M19.9587 20.4965L0.251671 39.5856C0.171938 39.6621 0.108643 39.7532 0.065443 39.8535C0.0222435 39.9539 0 40.0616 0 40.1704C0 40.2791 0.0222435 40.3868 0.065443 40.4872C0.108643 40.5876 0.171938 40.6786 0.251671 40.7551C0.33144 40.8327 0.426224 40.8943 0.530588 40.9363C0.634953 40.9784 0.746847 41 0.859852 41C0.972857 41 1.08475 40.9784 1.18911 40.9363C1.29348 40.8943 1.38826 40.8327 1.46803 40.7551L21.7475 21.0912C21.8275 21.0138 21.891 20.9219 21.9344 20.8207C21.9777 20.7195 22 20.611 22 20.5015C22 20.3919 21.9777 20.2834 21.9344 20.1822C21.891 20.081 21.8275 19.9891 21.7475 19.9117L1.46803 0.237877C1.30326 0.0842934 1.08329 -0.00102615 0.85474 7.62939e-06C0.6861 0.00154114 0.52166 0.0511971 0.381939 0.14278C0.24222 0.234364 0.133411 0.363811 0.069088 0.51498C0.00476646 0.666149 -0.0122204 0.83234 0.0202503 0.992809C0.052721 1.15328 0.133209 1.30093 0.251671 1.41732L19.9587 20.4965Z"
-                fill="#283645" />
+            <svg class="reviews__arrow reviews__arrow--right" width="22" height="41" aria-hidden="true"
+              focusable="false">
+              <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
             </svg>
-
           </button>
         </div>
 
@@ -184,7 +200,6 @@
         </p>
 
       </div>
-
     </section>
 
 
@@ -302,46 +317,61 @@
         </ul>
       </div>
 
-      <div class="map">
-
+      <div class="contacts__map-wrapper">
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12314.047487255355!2d37.594669260791335!3d55.734746717884356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b0786798397%3A0x1454a9c5a00d3e7d!2z0J3QvtCy0LDRjyDQotGA0LXRgtGM0Y_QutC-0LLQutCw!5e0!3m2!1sru!2sit!4v1621118835055!5m2!1sru!2sit"
+          style="border: 0;" allowfullscreen="" loading="lazy">
+        </iframe>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__container container">
-      <a href="#" class="page-footer__logo-link">
-        <img class="page-footer__logo" src="img/pink-footer-mobile.svg" alt="Лого Пинк">
+      <a href="#" class="page-footer__logo-link" aria-label="сайт Pink">
+        <svg class="page-footer__logo page-footer__logo--mobile" width="145" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink-footer-mobile"></use>
+        </svg>
+        <svg class="page-footer__logo page-footer__logo--desktop" width="147" height="40">
+          <use xlink:href="img/sprite.svg#logo-pink-footer-desktop"></use>
+        </svg>
       </a>
       <ul class="page-footer__social-list list-unstyled">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="https://twitter.com/twitter" target="_blank">
+          <a class="page-footer__social-link" href="https://twitter.com/twitter" target="_blank"
+            aria-label="ссылка на Twitter">
             <span class="visually-hidden">Твиттер</span>
-            <img src="img/icon-twitter.svg" alt="Лого Твиттер">
+            <svg class="page-footer__social-logo" width="18" height="14">
+              <use xlink:href="img/sprite.svg#logo-twitter"></use>
+            </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="https://www.facebook.com/" target="_blank">
+          <a class="page-footer__social-link" href="https://www.facebook.com/" target="_blank"
+            aria-label="ссылка на Facebook">
             <span class="visually-hidden">Фейсбук</span>
-            <img src="img/icon-facebook.svg" alt="Лого Фейсбук">
+            <svg class="page-footer__social-logo" width="9" height="18">
+              <use xlink:href="img/sprite.svg#logo-facebook"></use>
+            </svg>
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="https://www.youtube.com/" target="_blank">
+          <a class="page-footer__social-link" href="https://www.youtube.com/" target="_blank"
+            aria-label="ссылка на Youtube">
             <span class="visually-hidden">Ютюб</span>
-            <img src="img/icon-youtube.svg" alt="Лого Ютюб">
+            <svg class="page-footer__social-logo" width="15" height="13">
+              <use xlink:href="img/sprite.svg#logo-youtube"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <p class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+          aria-label="ссылка на сайт HTML Academy">
           <span class="visually-hidden">Html-Academy</span>
-          <svg class="page-footer__htmlacademy-logo" width="27" height="34" viewBox="0 0 27 34" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-              fill="#D22856" />
+          <svg class="page-footer__htmlacademy-logo" width="27" height="34">
+            <use xlink:href="img/sprite.svg#logo-academy"></use>
           </svg>
         </a>
       </p>
