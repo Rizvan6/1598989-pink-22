@@ -1,16 +1,18 @@
 .reviews {
-  @include background-transition;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6vw), 0 100%);
+  margin-bottom: -20vh;
   background-color: $basic-white;
-  padding: 50px 0 60px 0;
+  padding: 41px 0 56px 0;
   text-align: center;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0 80px 0;
+    padding: 50px 0 56px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 193px 0 150px 0;
+    padding: 184px 0 132px 0;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8vw), 0 100%);
 
     @media (min-width: $desktop-width) {
       &::before {
@@ -83,7 +85,7 @@
 
 .reviews__description {
   line-height: 30px;
-  margin-top: 16px;
+  margin-top: 13px;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
@@ -141,10 +143,10 @@
 
 .reviews__toogles {
   margin-bottom: 0;
-  margin-top: 34px;
+  margin-top: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 38px;
+    margin-top: 36px;
   }
 
   @media (min-width: $desktop-width) {

@@ -14,6 +14,7 @@
 
 <body class="page__body">
   <header class="page-header">
+    <!--page-header--nojs (JS отключен)-->
     <nav class="main-nav page-header__nav main-nav--closed">
       <!--main-nav--opened (открывает меню); main-nav--closed (закрывает); menu-nav--nojs (JS отключен)-->
       <div class="container main-nav__container">
@@ -39,7 +40,7 @@
             <a href="index.html" class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">Фотография</a>
+            <a class="main-nav__link">Фотографии</a>
           </li>
           <li class="main-nav__item ">
             <a href="form.html" class="main-nav__link">Конкурс</a>
@@ -62,8 +63,8 @@
     <section class="catalog">
       <div class="container">
         <h2 class="visually-hidden">Фотографии</h2>
-        <p class="text-slogan catalog__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
-          хватает ваших?</p>
+        <p class="text-slogan catalog__text">Взгляните на фотографии, которые выкладывают пользователи!<br
+            class="catalog__linebreak"> Видите, как не хватает ваших?</p>
 
         <article class="photo-card photo-card--panorama">
           <a href="#" class="photo-card__link photo-card__link--panorama">
@@ -187,7 +188,7 @@
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
               <picture>
-                <source media="(min-width: 1200px)" srscet="img/legs-desktop.jpg 1x, img/legs-desktop@2x.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/legs-desktop.jpg 1x, img/legs-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/legs-tablet.jpg 1x, img/legs-tablet@2x.jpg 2x">
                 <img class="photo-card__image" src="img/legs-mobile.jpg" srcset="img/legs-mobile@2x.jpg 2x"
                   alt="ноги на фоне горы">
@@ -268,7 +269,6 @@
                 <label class="edit__label-range" aria-label="ползунок для настройки выравнивания">
                   <input class="edit__range range" type="range" min="0" max="100" value="80" step="1" name="alignment">
                 </label>
-
 
                 <button type="button" class="edit__filter" aria-label="настройка насыщенности">
                   <svg class="edit__filter-icon edit__filter-icon--mobile-desktop" width="48" height="43"

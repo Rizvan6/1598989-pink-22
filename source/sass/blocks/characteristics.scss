@@ -3,21 +3,23 @@
 }
 
 .characteristics__intro {
-  @include background-transition;
-  padding: 44px 0 70px 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  margin-bottom: -20vh;
+  padding: 42px 0 64px 0;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 0 108px 0;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8vw), 0 100%);
+    padding: 48px 0 82px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 0 174px 0;
+    padding: 62px 0 149px 0;
   }
 }
 
 .characteristics__slogan:first-of-type {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -25,17 +27,17 @@
 }
 
 .characteristics__advantages {
-  padding-top: 200px;
-  padding-bottom: 295px;
+  padding-top: 180px;
+  padding-bottom: 290px;
   background-color: $basic-lightgrey;
 
   @media (min-width: $tablet-width) {
-    padding-top: 150px;
-    padding-bottom: 0;
+    padding-top: 152px;
+    padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 390px;
+    padding-top: 408px;
     padding-bottom: 40px;
   }
 }
@@ -82,8 +84,8 @@
         width: 186px;
         height: 302px;
         background: url("../img/application-desktop-1.png") no-repeat 0 0;
-        left: 4%;
-        top: -170%;
+        left: 3%;
+        top: -161%;
 
         @media (min-resolution: 2dppx) {
           background: url("../img/application-desktop-1@2x.png") no-repeat 0 0;
@@ -99,8 +101,8 @@
         width: 300px;
         height: 10px;
         background: url("../img/shadow.png") no-repeat 0 0;
-        left: -2%;
-        top: -32%;
+        left: -3%;
+        top: -30%;
       }
     }
   }
@@ -114,7 +116,7 @@
         height: 302px;
         background: url("../img/application-desktop-2.png") no-repeat 0 0;
         left: 40%;
-        top: -170%;
+        top: -161%;
 
         @media (min-resolution: 2dppx) {
           background: url("../img/application-desktop-2@2x.png") no-repeat 0 0;
@@ -131,7 +133,7 @@
         height: 10px;
         background: url("../img/shadow.png") no-repeat 0 0;
         left: 34%;
-        top: -32%;
+        top: -30%;
       }
     }
   }
@@ -143,7 +145,7 @@
       height: 320px;
       position: absolute;
       background: url("../img/application-mobile.png") no-repeat 0 0;
-      bottom: -96%;
+      bottom: -95%;
       right: 25%;
 
       @media (min-resolution: 2dppx) {
@@ -155,7 +157,7 @@
         width: 268px;
         height: 547px;
         background: url("../img/application-tablet.png") no-repeat 0 0;
-        bottom: -16%;
+        bottom: -19%;
         left: 3%;
 
         @media (min-resolution: 2dppx) {
@@ -168,8 +170,8 @@
         width: 186px;
         height: 302px;
         background: url("../img/application-desktop-3.png") no-repeat 0 0;
-        left: 75%;
-        top: -170%;
+        left: 76%;
+        top: -161%;
 
         @media (min-resolution: 2dppx) {
           background: url("../img/application-desktop-3@2x.png") no-repeat 0 0;
@@ -185,14 +187,14 @@
         width: 300px;
         height: 10px;
         background: url("../img/shadow.png") no-repeat 0 0;
-        left: 68%;
-        top: -32%;
+        left: 70%;
+        top: -30%;
       }
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -217,6 +219,7 @@
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 22px;
   }
 }
 
@@ -225,6 +228,18 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 

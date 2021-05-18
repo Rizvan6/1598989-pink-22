@@ -14,6 +14,7 @@
 
 <body class="page__body">
   <header class="page-header">
+    <!--page-header--nojs (JS отключен)-->
     <nav class="main-nav page-header__nav main-nav--closed">
       <!--main-nav--opened (открывает меню); main-nav--closed (закрывает); menu-nav--nojs (JS отключен)-->
       <div class="container main-nav__container">
@@ -39,7 +40,7 @@
             <a href="index.html" class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link">Фотография</a>
+            <a href="catalog.html" class="main-nav__link">Фотографии</a>
           </li>
           <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__link">Конкурс</a>
@@ -194,7 +195,7 @@
             <div class="contest__emotion-item">
               <label class="visually-hidden" for="description">Форма для эмоций</label>
               <textarea class="filling-input contest__emotion-input" name="description" id="description" cols="30"
-                rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
         </div>
@@ -202,7 +203,10 @@
 
         <div class="contest__send-form">
           <button class="button button--green contest__button" typy="submit">Отправить форму</button>
-          <p class="contest__text-required"><span class="contest__star">*</span> – Обязательные поля</p>
+          <p class="contest__text-required">
+            <span class="contest__star">*</span> &mdash; Обязательные <span class="contest__text-desktop">для
+              заполнения</span> поля
+          </p>
         </div>
       </form>
 
@@ -263,7 +267,7 @@
 
   <section class="pop-up pop-up--failure">
     <div class="pop-up__wrapper pop-up__wrapper--failure">
-      <h2 class="pop-up__title">Что-то пошло <br class="pop-up__linebreak">не так!</h2>
+      <h2 class="pop-up__title">Что-то пошло <br class="pop-up__linebreak-failure">не так!</h2>
       <p class="pop-up__text pop-up__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их
         заполнить</p>
     </div>
@@ -276,7 +280,7 @@
     <div class="pop-up__wrapper pop-up__wrapper--success">
       <h2 class="pop-up__title">Ваша заявка отправлена</h2>
       <p class="pop-up__text pop-up__text--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В
-        ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        ближайшее время мы рассмотрим ее и <br class="pop-up__linebreak-success">оповестим вас.</p>
     </div>
     <div class="pop-up__wrapper-button-success">
       <button class="button button--green pop-up__button pop-up__button--success" type="button">Закрыть окно</button>
