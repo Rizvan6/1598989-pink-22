@@ -9,6 +9,7 @@
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
     padding: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -20,6 +21,7 @@
       1fr
       1fr;
     column-gap: 20px;
+    row-gap: 55px;
 
     grid-template-areas:
       "picture edit"
@@ -35,6 +37,7 @@
       1fr
       1fr;
     column-gap: 90px;
+    row-gap: 44px;
   }
 }
 
@@ -60,7 +63,7 @@
 }
 
 .edit__wrapper {
-  margin: 40px 0;
+  margin: 41px 0 64px 0;
 
   @media (min-width: $tablet-width) {
     grid-area: edit;
@@ -72,52 +75,76 @@
 .edit__filters {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
 
   @media (max-width: $mobile-width-only) {
     justify-content: center;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $tablet-width) {
     width: 275px;
-    justify-content: center;
+    justify-content: flex-start;
+    height: 100%;
+    align-items: center;
+    padding-left: 3px;
+    padding-top: 10px;
+    align-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 410px;
-    justify-content: flex-start;
+    padding-top: 0;
+    padding-left: 0;
   }
 }
 
 .edit__filter {
-  width: 48px;
   border: none;
-  background-color: red;
-  height: 17px;
+  display: block;
+  background-color: transparent;
+  width: 48px;
+  padding: 0;
 
-  &--crop {
-    @media (max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
+    color: $basic-darkblue;
+    opacity: 30%;
+    cursor: pointer;
+    margin-right: 35px;
+    margin-bottom: 34px;
+
+    &--active {
+      color: $basic-pink;
+      opacity: 100%;
+    }
+
+    &:hover:not(.edit__filter--active) {
+      opacity: 50%;
+    }
+
+    &:nth-of-type(1) {
       order: -3;
-      margin-right: 35px;
     }
-  }
 
-  &--fill {
-    @media (max-width: $mobile-width-only) {
+    &:nth-of-type(2) {
       order: -2;
-      margin-right: 35px;
     }
-  }
 
-  &--contrast {
-    @media (max-width: $mobile-width-only) {
+    &:nth-of-type(3) {
       order: -1;
+    }
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
     }
   }
 
   @media (min-width: $tablet-width) {
     width: 24px;
-    margin-right: 29px;
+    margin-right: 28px;
+    color: $basic-pink;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -134,20 +161,83 @@
   }
 }
 
-.edit__label-range {
-  margin-top: 38px;
+.edit__filter-icon {
+  display: block;
+  fill: currentColor;
+  max-width: 50px;
+  max-height: 50px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-bottom: 62px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 24px;
+    max-height: 22px;
+  }
 
-    &:last-of-type {
-      margin-bottom: 0;
+  &--mobile-desktop {
+    max-width: 50px;
+    max-height: 50px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
     }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.edit__label-range {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: $basic-darkblue;
+    opacity: 10%;
+    position: absolute;
+    bottom: -28px;
+
+    @media (min-width: $tablet-width) {
+      width: 275px;
+      left: 42%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 410px;
+      left: 39%;
+      bottom: -26px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    order: 3;
   }
 
   &--hidden {
     @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:last-of-type::before {
       display: none;
     }
   }
@@ -173,7 +263,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-self: center;
+    justify-self: flex-end;
+    padding-right: 12px;
     align-self: flex-end;
   }
 
@@ -183,6 +274,7 @@
     align-self: flex-end;
     justify-self: normal;
     justify-content: space-between;
+    padding-right: 0;
   }
 }
 
@@ -197,7 +289,7 @@
     width: 260px;
 
     &:first-of-type {
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
   }
 

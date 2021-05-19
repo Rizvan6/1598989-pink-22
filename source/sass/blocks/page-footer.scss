@@ -2,8 +2,14 @@
   padding: 40px 0;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 40px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 70px 0;
+    padding-top: 69px;
+    padding-bottom: 75px;
   }
 }
 
@@ -11,7 +17,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
 }
@@ -23,17 +29,48 @@
   vertical-align: top;
 }
 
-.page-footer__logo,
-.page-footer__htmlacademy-logo {
+.page-footer__logo-link {
+  color: $basic-darkblue;
+
+  &:hover {
+    color: $basic-pink;
+  }
+
+  &:active {
+    color: $basic-darkblue;
+    opacity: 30%;
+  }
+}
+
+.page-footer__logo {
+  fill: currentColor;
   display: block;
+  height: 40px;
+
+  &--mobile {
+    width: 145px;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    width: 147px;
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 }
 
 .page-footer__social-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 172px;
-  margin: 41px 0;
+  width: 176px;
+  margin: 38px 0;
   margin-left: auto;
   margin-right: auto;
 
@@ -43,8 +80,8 @@
 }
 
 .page-footer__social-link {
-  width: 51px;
-  height: 51px;
+  width: 54px;
+  height: 54px;
   background-color: transparent;
   border-radius: 50%;
   border: 3px solid rgba($basic-darkblue, 0.1);
@@ -61,6 +98,12 @@
   }
 }
 
+.page-footer__social-logo {
+  display: block;
+  max-width: 18px;
+  max-height: 18px;
+}
+
 .page-footer__copyright {
   margin: 0;
   display: flex;
@@ -72,6 +115,10 @@
   @media (max-width: $mobile-width-only) {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,12 +134,21 @@
   }
 }
 
-.page-footer__htmlacademy-logo {
-  &:hover path {
-    fill: $basic-darkblue;
+.page-footer__copyright-link {
+  color: $basic-pink;
+
+  &:hover {
+    color: $basic-darkblue;
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: 30%;
   }
+}
+
+.page-footer__htmlacademy-logo {
+  display: block;
+  fill: currentColor;
+  width: 27px;
+  height: 34px;
 }

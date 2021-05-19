@@ -11,7 +11,7 @@
   cursor: pointer;
 
   &--green {
-    line-height: 30px;
+    padding: 21px 0;
     text-transform: uppercase;
     border-radius: 1px;
     border: 2px solid $button-form;
@@ -33,6 +33,10 @@
     color: $basic-white;
     display: inline-block;
     vertical-align: top;
+
+    @media (min-width: $desktop-width) {
+      font-size: 21px;
+    }
 
     &:hover {
       background-color: $basic-white;

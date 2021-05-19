@@ -1,39 +1,44 @@
 .contacts {
   background-color: $basic-white;
-  padding-top: 50px;
+  padding-top: 43px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 65px;
   }
 }
 
 .contacts__list {
-  margin-top: 44px;
+  margin-top: 34px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 50px;
+    justify-content: center;
+    margin-top: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 60px;
+    margin-top: 41px;
+    justify-content: space-around;
   }
 }
 
 .contacts__item {
-  margin-bottom: 31px;
-  width: 280px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
+    width: 240px;
+
+    &:nth-of-type(2n) {
+      margin-left: 78px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +52,12 @@
 
     &--address {
       order: 2;
+      margin-right: 14px;
+      margin-left: 14px;
+    }
+
+    &:nth-of-type(2n) {
+      margin-left: 0;
     }
   }
 }
@@ -64,7 +75,14 @@
   color: $basic-pink;
   display: inline-block;
   vertical-align: top;
-  margin-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
+  }
 
   &:hover {
     color: $basic-darkblue;
@@ -73,5 +91,31 @@
 
   &:active {
     opacity: 30%;
+  }
+}
+
+.contacts__map {
+  clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: 36px;
+  width: 100vw;
+  min-width: 320px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -18px;
+    height: 374px;
+    clip-path: polygon(50% 18%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 496px;
+    margin-top: -20px;
+    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
   }
 }

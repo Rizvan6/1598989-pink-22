@@ -1,10 +1,10 @@
 .contest {
-  padding-top: 54px;
-  padding-bottom: 26px;
+  padding-top: 44px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,17 +14,17 @@
 
 .contest__text {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 74px;
     width: 490px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 84px;
+    margin-bottom: 73px;
     width: 756px;
   }
 }
@@ -50,7 +50,7 @@
     padding: 0 130px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
   }
 }
 
@@ -85,17 +85,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
     order: 1;
   }
 
   @media (min-width: $desktop-width) {
-    width: 433px;
+    width: 435px;
   }
 }
 
 .contest__data-item {
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -105,14 +105,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 56px;
+    margin-bottom: 53px;
   }
 }
 
 .contest__data-label {
   @media (max-width: $mobile-width-only) {
     margin-left: 23px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
 
   @media (min-width: $tablet-width) {
@@ -130,17 +130,18 @@
 
 .contest__achievements-container {
   @media (max-width: $mobile-width-only) {
-    padding: 42px 0;
+    padding: 40px 0 48px 0;
     background-color: $basic-lightgrey;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
     order: 4;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
+    margin-bottom: 56px;
   }
 }
 
@@ -160,11 +161,11 @@
 
 .contest__achievements-list {
   @media (min-width: $tablet-width) {
-    padding: 52px 58px;
+    padding: 48px 58px 52px 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 52px 10px 10px 60px;
+    padding: 48px 8px 10px 58px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -172,7 +173,7 @@
 }
 
 .contest__achievements-item {
-  margin-bottom: 58px;
+  margin-bottom: 52px;
   width: 260px;
 
   &:last-of-type {
@@ -180,7 +181,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 46px;
+    margin-bottom: 52px;
 
     &:nth-child(2),
     &:nth-child(4),
@@ -199,16 +200,17 @@
 
 .contest__contacts-container {
   @media (max-width: $mobile-width-only) {
-    padding: 42px 0;
+    padding: 32px 0 42px 0;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 58px;
     order: 3;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
+    margin-bottom: 56px;
   }
 }
 
@@ -220,18 +222,19 @@
 
 .contest__contacts-list {
   @media (min-width: $tablet-width) {
-    padding: 44px 58px;
+    padding: 36px 58px 28px 58px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 35px 58px 14px 58px;
   }
 }
 
 .contest__contacts-item {
-  margin-bottom: 28px;
+  margin-bottom: 17px;
   position: relative;
 
   &:last-of-type {
@@ -239,7 +242,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -275,19 +278,19 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    width: 370px;
+    width: 375px;
   }
 }
 
 .contest__contacts-label {
   @media (max-width: $mobile-width-only) {
     margin-left: 23px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 23px;
-    margin-top: 8px;
+    margin-left: 20px;
+    margin-top: 10px;
     order: 2;
   }
 }
@@ -296,22 +299,22 @@
 
 .contest__application-container {
   @media (max-width: $mobile-width-only) {
-    padding: 42px 0;
+    padding: 40px 0 48px 0;
     background-color: $basic-lightgrey;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     order: 2;
   }
 
   @media (min-width: $desktop-width) {
-    width: 431px;
+    width: 435px;
   }
 }
 
 .contest__application-title {
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -320,7 +323,11 @@
 
 .contest__application-list {
   @media (min-width: $tablet-width) {
-    padding: 54px 74px;
+    padding: 50px 74px 56px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 74px 58px 70px;
   }
 }
 
@@ -336,22 +343,23 @@
 
 .contest__emotion-container {
   @media (max-width: $mobile-width-only) {
-    padding-top: 42px;
-    padding-bottom: 48px;
+    padding-top: 37px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 64px;
     order: 6;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
+    margin-bottom: 66px;
   }
 }
 
 .contest__emotion-title {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -360,13 +368,24 @@
 
 .contest__emotion-item {
   @media (min-width: $tablet-width) {
-    padding: 44px 58px;
+    padding: 38px 58px 44px 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 34px 58px 34px 58px;
   }
 }
 
 .contest__emotion-input {
+  min-height: 201px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
+    min-height: 193px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 128px;
   }
 }
 
@@ -396,7 +415,7 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: 296px;
+    width: 300px;
   }
 }
 
@@ -411,8 +430,16 @@
     margin-top: 0;
     text-align: start;
   }
+}
 
-  .contest__star {
-    color: $basic-pink;
+.contest__star {
+  color: $basic-pink;
+}
+
+.contest__text-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
   }
 }
