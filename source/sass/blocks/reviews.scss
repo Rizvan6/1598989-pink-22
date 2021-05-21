@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 184px 0 132px 0;
+    padding: 184px 0 129px 0;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8vw), 0 100%);
 
     @media (min-width: $desktop-width) {
@@ -80,6 +80,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+    line-height: 34px;
   }
 }
 
