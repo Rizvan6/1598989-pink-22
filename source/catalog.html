@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -21,13 +21,13 @@
 
         <a href="index.html" class="main-nav__logo-link" aria-label="сайт Pink">
           <svg class="main-nav__logo-image main-nav__logo-image--mobile" width="74" height="23">
-            <use xlink:href="img/sprite.svg#logo-pink-header-mobile"></use>
+            <use xlink:href="img/sprite.svg#pink-header-mobile"></use>
           </svg>
           <svg class="main-nav__logo-image main-nav__logo-image--tablet" width="145" height="40">
-            <use xlink:href="img/sprite.svg#logo-pink-header-tablet"></use>
+            <use xlink:href="img/sprite.svg#pink-header-tablet"></use>
           </svg>
           <svg class="main-nav__logo-image main-nav__logo-image--desktop" width="147" height="40">
-            <use xlink:href="img/sprite.svg#logo-pink-header-desktop"></use>
+            <use xlink:href="img/sprite.svg#pink-header-desktop"></use>
           </svg>
         </a>
 
@@ -69,6 +69,11 @@
         <article class="photo-card photo-card--panorama">
           <a href="#" class="photo-card__link photo-card__link--panorama">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="photo-card__image photo-card__image--panorama" src="img/panorama-mobile.jpg"
@@ -83,7 +88,7 @@
             <div class="photo-card__wrapper-likes photo-card__wrapper-likes--panorama">
               <button class="photo-card__button photo-card__button--panorama" type="button" aria-label="Нравится">
                 <svg class="photo-card__button-icon" width="13" height="12">
-                  <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
               </button>
               <span class="photo-card__likes">Нравится: 215</span>
@@ -95,6 +100,11 @@
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/car-desktop.webp 1x, img/car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/car-tablet.webp 1x, img/car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/car-mobile.webp 1x, img/car-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/car-desktop.jpg 1x, img/car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/car-tablet.jpg 1x, img/car-tablet@2x.jpg 2x">
                 <img class="photo-card__image" src="img/car-mobile.jpg" srcset="img/car-mobile@2x.jpg 2x"
@@ -107,7 +117,7 @@
               <div class="photo-card__wrapper-likes">
                 <button class="photo-card__button" type="button" aria-label="Нравится">
                   <svg class="photo-card__button-icon" width="13" height="12">
-                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
                 </button>
                 <span class="photo-card__likes">Нравится: 356</span>
@@ -118,6 +128,11 @@
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/drums-desktop.webp 1x, img/drums-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/drums-tablet.webp 1x, img/drums-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/drums-mobile.webp 1x, img/drums-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/drums-desktop.jpg 1x, img/drums-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/drums-tablet.jpg 1x, img/drums-tablet@2x.jpg 2x">
                 <img class="photo-card__image" src="img/drums-mobile.jpg" srcset="img/drums-mobile@2x.jpg 2x"
@@ -130,7 +145,7 @@
               <div class="photo-card__wrapper-likes">
                 <button class="photo-card__button" type="button" aria-label="Нравится">
                   <svg class="photo-card__button-icon" width="13" height="12">
-                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
                 </button>
                 <span class="photo-card__likes">Нравится: 666</span>
@@ -141,6 +156,11 @@
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/windows-desktop.webp 1x, img/windows-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/windows-tablet.webp 1x, img/windows-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/windows-mobile.webp 1x, img/windows-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/windows-desktop.jpg 1x, img/windows-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/windows-tablet.jpg 1x, img/windows-tablet@2x.jpg 2x">
                 <img class="photo-card__image" src="img/windows-mobile.jpg" srcset="img/windows-mobile@2x.jpg 2x"
@@ -153,7 +173,7 @@
               <div class="photo-card__wrapper-likes">
                 <button class="photo-card__button" type="button" aria-label="Нравится">
                   <svg class="photo-card__button-icon" width="13" height="12">
-                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
                 </button>
                 <span class="photo-card__likes">Нравится: 215</span>
@@ -164,6 +184,11 @@
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/festival-desktop.webp 1x, img/festival-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/festival-tablet.webp 1x, img/festival-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/festival-mobile.webp 1x, img/festival-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/festival-desktop.jpg 1x, img/festival-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/festival-tablet.jpg 1x, img/festival-tablet@2x.jpg 2x">
@@ -177,7 +202,7 @@
               <div class="photo-card__wrapper-likes">
                 <button class="photo-card__button" type="button" aria-label="Нравится">
                   <svg class="photo-card__button-icon" width="13" height="12">
-                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
                 </button>
                 <span class="photo-card__likes">Нравится: 4</span>
@@ -188,6 +213,11 @@
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/legs-desktop.webp 1x, img/legs-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/legs-tablet.webp 1x, img/legs-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/legs-mobile.webp 1x, img/legs-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/legs-desktop.jpg 1x, img/legs-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/legs-tablet.jpg 1x, img/legs-tablet@2x.jpg 2x">
                 <img class="photo-card__image" src="img/legs-mobile.jpg" srcset="img/legs-mobile@2x.jpg 2x"
@@ -200,7 +230,7 @@
               <div class="photo-card__wrapper-likes">
                 <button class="photo-card__button" type="button" aria-label="Нравится">
                   <svg class="photo-card__button-icon" width="13" height="12">
-                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
                 </button>
                 <span class="photo-card__likes">Нравится: 150</span>
@@ -211,6 +241,11 @@
           <article class="photo-card catalog__photo-card">
             <a href="#" class="photo-card__link">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/wing-desktop.webp 1x, img/wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/wing-tablet.webp 1x, img/wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/wing-mobile.webp 1x, img/wing-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/wing-desktop.jpg 1x, img/wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/wing-tablet.jpg 1x, img/wing-tablet@2x.jpg 2x">
                 <img class="photo-card__image" src="img/wing-mobile.jpg" srcset="img/wing-mobile@2x.jpg 2x"
@@ -223,7 +258,7 @@
               <div class="photo-card__wrapper-likes">
                 <button class="photo-card__button" type="button" aria-label="Нравится">
                   <svg class="photo-card__button-icon" width="13" height="12">
-                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
                 </button>
                 <span class="photo-card__likes">Нравится: 2560</span>
@@ -247,6 +282,9 @@
 
             <a href="#" class="edit__link">
               <picture>
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/snow-tablet.webp 1x, img/snow-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/snow-mobile.webp 1x, img/snow-mobile@2x.webp 2x">
                 <source media="(min-width: 660px)" srcset="img/snow-tablet.jpg 1x, img/snow-tablet@2x.jpg 2x">
                 <img class="edit__image" src="img/snow-mobile.jpg" srcset="img/snow-mobile@2x.jpg 2x"
                   alt="заснеженная дорога">
@@ -259,11 +297,11 @@
                 <button type="button" class="edit__filter edit__filter--active" aria-label="настройка выравнивания">
                   <svg class="edit__filter-icon edit__filter-icon--mobile-desktop" width="44" height="44"
                     aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-crop-mobile"></use>
+                    <use xlink:href="img/sprite.svg#crop"></use>
                   </svg>
                   <svg class="edit__filter-icon edit__filter-icon--tablet" width="22" height="22" aria-hidden="true"
                     focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-crop-tablet"></use>
+                    <use xlink:href="img/sprite.svg#crop-tablet"></use>
                   </svg>
                 </button>
                 <label class="edit__label-range" aria-label="ползунок для настройки выравнивания">
@@ -273,11 +311,11 @@
                 <button type="button" class="edit__filter" aria-label="настройка насыщенности">
                   <svg class="edit__filter-icon edit__filter-icon--mobile-desktop" width="48" height="43"
                     aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-fill-mobile"></use>
+                    <use xlink:href="img/sprite.svg#fill"></use>
                   </svg>
                   <svg class="edit__filter-icon edit__filter-icon--tablet" width="24" height="22" aria-hidden="true"
                     focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-fill-tablet"></use>
+                    <use xlink:href="img/sprite.svg#fill-tablet"></use>
                   </svg>
                 </button>
                 <label class="edit__label-range edit__label-range--hidden"
@@ -289,11 +327,11 @@
                 <button type="button" class="edit__filter" aria-label="настройка яркости">
                   <svg class="edit__filter-icon edit__filter-icon--mobile-desktop" width="32" height="32"
                     aria-hidden="true" focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-contrast-mobile"></use>
+                    <use xlink:href="img/sprite.svg#contrast"></use>
                   </svg>
                   <svg class="edit__filter-icon edit__filter-icon--tablet" width="16" height="16" aria-hidden="true"
                     focusable="false">
-                    <use xlink:href="img/sprite.svg#icon-contrast-tablet"></use>
+                    <use xlink:href="img/sprite.svg#contrast-tablet"></use>
                   </svg>
                 </button>
                 <label class="edit__label-range edit__label-range--hidden" aria-label="ползунок для настройки яркости">
@@ -316,10 +354,10 @@
     <div class="page-footer__container container">
       <a href="#" class="page-footer__logo-link" aria-label="сайт Pink">
         <svg class="page-footer__logo page-footer__logo--mobile" width="145" height="40">
-          <use xlink:href="img/sprite.svg#logo-pink-footer-mobile"></use>
+          <use xlink:href="img/sprite.svg#pink-footer-mobile"></use>
         </svg>
         <svg class="page-footer__logo page-footer__logo--desktop" width="147" height="40">
-          <use xlink:href="img/sprite.svg#logo-pink-footer-desktop"></use>
+          <use xlink:href="img/sprite.svg#pink-footer-desktop"></use>
         </svg>
       </a>
       <ul class="page-footer__social-list list-unstyled">
@@ -328,7 +366,7 @@
             aria-label="ссылка на Twitter">
             <span class="visually-hidden">Твиттер</span>
             <svg class="page-footer__social-logo" width="18" height="14">
-              <use xlink:href="img/sprite.svg#logo-twitter"></use>
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
@@ -337,7 +375,7 @@
             aria-label="ссылка на Facebook">
             <span class="visually-hidden">Фейсбук</span>
             <svg class="page-footer__social-logo" width="9" height="18">
-              <use xlink:href="img/sprite.svg#logo-facebook"></use>
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -346,7 +384,7 @@
             aria-label="ссылка на Youtube">
             <span class="visually-hidden">Ютюб</span>
             <svg class="page-footer__social-logo" width="15" height="13">
-              <use xlink:href="img/sprite.svg#logo-youtube"></use>
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -357,7 +395,7 @@
           aria-label="ссылка на сайт HTML Academy">
           <span class="visually-hidden">Html-Academy</span>
           <svg class="page-footer__htmlacademy-logo" width="27" height="34">
-            <use xlink:href="img/sprite.svg#logo-academy"></use>
+            <use xlink:href="img/sprite.svg#icon-html-academy"></use>
           </svg>
         </a>
       </p>

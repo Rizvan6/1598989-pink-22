@@ -229,17 +229,17 @@
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
 
-  &--tablet {
+.characteristics__linebreak-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
   }
 }
 

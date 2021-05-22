@@ -31,7 +31,7 @@
 }
 
 .download__list {
-  margin: 32px 0 20px 0;
+  margin: 32px 0 16px 0;
   width: 204px;
   display: flex;
   flex-wrap: wrap;
@@ -39,12 +39,16 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    margin: 46px 0 32px 0;
+    margin: 46px 0 28px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 68px 0 50px 0;
+    margin: 68px 0 46px 0;
   }
+}
+
+.download__item {
+  margin-bottom: 4px;
 }
 
 .download__link {
