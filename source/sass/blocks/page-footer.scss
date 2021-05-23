@@ -76,6 +76,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: 4px;
   }
 }
 

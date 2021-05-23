@@ -1,15 +1,15 @@
 .tarif {
   background-color: $basic-lightgrey;
-  padding: 214px 0 46px 0;
+  padding: 214px 0 45px 0;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 68px;
-    padding-top: 188px;
+    padding-top: 190px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 96px;
-    padding-top: 202px;
+    padding-top: 204px;
   }
 }
 
@@ -111,7 +111,7 @@
   color: $basic-darkblue;
   background-color: $basic-white;
   border: 2px solid $basic-grey;
-  padding: 17px 17px 16px 20px;
+  padding: 17px 19px 16px 19px;
 
   @media (max-width: $mobile-width-only) {
     &:first-of-type {
