@@ -3,9 +3,10 @@
 @import "global/global.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
+@import "global/mixins.scss";
 @import "global/container.scss";
 @import "global/visually-hidden.scss";
-@import "global/mixins.scss";
+@import "global/list-unstyled.scss";
 
 // Blocks
 @import "blocks/page.scss";

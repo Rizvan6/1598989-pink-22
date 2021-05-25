@@ -1,31 +1,27 @@
 .reviews {
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6vw), 0 100%);
-  margin-bottom: -41%;
-  background-color: $basic-white;
-  padding: 41px 0 56px 0;
+  padding: 41px 0 106px 0;
   text-align: center;
   position: relative;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0 54px 0;
-    margin-bottom: -20%;
+    padding: 50px 0 106px 0;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 184px 0 129px 0;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8vw), 0 100%);
-    margin-bottom: -12%;
+    padding: 184px 0 148px 0;
+  }
 
+  &::before {
     @media (min-width: $desktop-width) {
-      &::before {
-        content: "";
-        width: 79px;
-        height: 63px;
-        position: absolute;
-        top: 72px;
-        left: 47%;
-        background: url("../img/quotes.svg") no-repeat 0 0;
-      }
+      content: "";
+      width: 79px;
+      height: 63px;
+      position: absolute;
+      top: 72px;
+      left: 47%;
+      background: url("../img/quotes.svg") no-repeat 0 0;
     }
   }
 }
@@ -88,8 +84,7 @@
 
 .reviews__description {
   line-height: 30px;
-  margin-top: 13px;
-  margin-bottom: 0;
+  margin: 13px 0 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

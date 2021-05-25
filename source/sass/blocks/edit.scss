@@ -3,7 +3,7 @@
   padding: 20px 0 40px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 0;
+    padding: 56px 0 55px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,7 +63,7 @@
 }
 
 .edit__wrapper {
-  margin: 41px 0 64px 0;
+  margin: 42px 0 64px 0;
 
   @media (min-width: $tablet-width) {
     grid-area: edit;
@@ -118,6 +118,7 @@
     &--active {
       color: $basic-pink;
       opacity: 100%;
+      padding-left: 3px;
     }
 
     &:hover:not(.edit__filter--active) {
@@ -212,7 +213,7 @@
     background-color: $basic-darkblue;
     opacity: 10%;
     position: absolute;
-    bottom: -28px;
+    bottom: -27px;
 
     @media (min-width: $tablet-width) {
       width: 275px;
