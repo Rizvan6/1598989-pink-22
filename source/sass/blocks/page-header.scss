@@ -29,11 +29,11 @@
   }
 
   &--nojs {
-    background-position: 50% 50%;
-    background-size: 100% 500px;
+    background-position: 50% 259px;
+    background-size: 100%;
 
     @media (min-width: $tablet-width) {
-      background-position: 50% 100%;
+      background-position: 50% 255px;
       background-size: 100%;
     }
 

@@ -31,6 +31,12 @@ const styles = () => {
 
 exports.styles = styles;
 
+//HTML
+
+const html = () => {
+  return gulp.src("source/*.html").pipe(gulp.dest("build"));
+};
+
 //JS
 
 const scripts = () => {
@@ -102,7 +108,6 @@ const copy = (done) => {
         "source/img/**/*.svg",
         "source/img/favicon/*.{svg,png}",
         "!source/img/icons/*.svg",
-        "source/**/*.html",
       ],
       {
         base: "source",
@@ -130,11 +135,18 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+};
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series(html, reload));
   gulp.watch("source/js/script.js", gulp.series("scripts"));
 };
 
@@ -150,7 +162,7 @@ const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  gulp.parallel(styles, scripts, sprite, createWebp)
+  gulp.parallel(styles, html, scripts, sprite, createWebp)
 );
 
 exports.build = build;
@@ -161,6 +173,6 @@ exports.default = gulp.series(
   clean,
   copy,
   optimizeImages,
-  gulp.parallel(styles, scripts, sprite, createWebp),
+  gulp.parallel(styles, html, scripts, sprite, createWebp),
   gulp.series(server, watcher)
 );

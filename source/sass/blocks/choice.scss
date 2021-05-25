@@ -54,6 +54,14 @@
 }
 
 .choice__input {
+  &:focus-visible + .choice__label--checkbox::before {
+    border-color: $basic-pink;
+  }
+
+  &:focus-visible + .choice__label--radio::before {
+    border-color: $basic-pink;
+  }
+
   &:checked + .choice__label--checkbox::after {
     content: "";
     width: 22px;
